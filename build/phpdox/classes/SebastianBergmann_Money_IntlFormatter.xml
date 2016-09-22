@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SebastianBergmann\Money\IntlFormatter" namespace="SebastianBergmann\Money" name="IntlFormatter" abstract="false" final="false" start="24" end="55">
+  <file path="../src" file="IntlFormatter.php" realpath="/home/dri/workspace/jenkins/test-project/src/IntlFormatter.php" size="1386" time="2016-09-21T18:04:51+00:00" unixtime="1474481091" sha1="a5515f2e04b7027965e51a330abdf3434b4d7352" relative="IntlFormatter.php"/>
+  <docblock>
+    <description compact="Formatter implementation that uses PHP's built-in NumberFormatter."/>
+    <package value="Money"/>
+    <author value="Sebastian Bergmann &lt;sebastian@phpunit.de&gt;"/>
+    <copyright value="Sebastian Bergmann &lt;sebastian@phpunit.de&gt;"/>
+    <license name="http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License"/>
+    <link value="http://www.github.com/sebastianbergmann/money"/>
+  </docblock>
+  <implements full="SebastianBergmann\Money\Formatter" namespace="SebastianBergmann\Money" name="Formatter"/>
+  <member name="numberFormatter" visibility="private" static="false" line="29">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="NumberFormatter" namespace="" name="NumberFormatter"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="34" end="40" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$locale"/>
+    </docblock>
+    <parameter name="locale" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="format" start="48" end="54" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Formats a Money object using PHP's built-in NumberFormatter."/>
+      <param type="object" variable="$money">
+        <type full="\SebastianBergmann\Money\Money" namespace="\SebastianBergmann\Money" name="Money"/>
+      </param>
+      <return type="string"/>
+    </docblock>
+    <parameter name="money" byreference="false" type="object">
+      <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+    </parameter>
+  </method>
+  <interface full="SebastianBergmann\Money\Formatter" namespace="SebastianBergmann\Money" name="Formatter">
+    <method name="format" start="30" end="30" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Formats a Money object."/>
+        <param type="object" variable="$money">
+          <type full="\SebastianBergmann\Money\Money" namespace="\SebastianBergmann\Money" name="Money"/>
+        </param>
+        <return type="string"/>
+      </docblock>
+      <parameter name="money" byreference="false" type="object">
+        <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+      </parameter>
+    </method>
+  </interface>
+</class>

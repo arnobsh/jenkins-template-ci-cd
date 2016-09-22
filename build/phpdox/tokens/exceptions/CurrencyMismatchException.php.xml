@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="../src/exceptions" file="CurrencyMismatchException.php" realpath="/home/dri/workspace/jenkins/test-project/src/exceptions/CurrencyMismatchException.php" size="637" time="2016-09-21T18:04:51+00:00" unixtime="1474481091" sha1="e93ceb75d89bb69bf7108a47bc2f327b85e126c4" relative="exceptions/CurrencyMismatchException.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="3">
+    <token name="T_COMMENT"> * This file is part of the Money package.</token>
+  </line>
+  <line no="4">
+    <token name="T_COMMENT"> *</token>
+  </line>
+  <line no="5">
+    <token name="T_COMMENT"> * (c) Sebastian Bergmann &lt;sebastian@phpunit.de&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT"> *</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT"> * For the full copyright and license information, please view the LICENSE</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT"> * file that was distributed with this source code.</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT"> */</token>
+  </line>
+  <line no="10"/>
+  <line no="11">
+    <token name="T_NAMESPACE">namespace</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">SebastianBergmann</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Money</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> * @package    Money</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> * @author     Sebastian Bergmann &lt;sebastian@phpunit.de&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> * @copyright  Sebastian Bergmann &lt;sebastian@phpunit.de&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> * @license    http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT"> * @link       http://www.github.com/sebastianbergmann/money</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="20">
+    <token name="T_CLASS">class</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">CurrencyMismatchException</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_EXTENDS">extends</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">InvalidArgumentException</token>
+  </line>
+  <line no="21">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="22">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="23"/>
+</source>

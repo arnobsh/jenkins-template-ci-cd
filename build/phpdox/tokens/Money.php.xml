@@ -1,0 +1,2653 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="../src" file="Money.php" realpath="/home/dri/workspace/jenkins/test-project/src/Money.php" size="13915" time="2016-09-21T18:04:51+00:00" unixtime="1474481091" sha1="b3a6c392034df622c1215ffb36688ad33f9faae3" relative="Money.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="3">
+    <token name="T_COMMENT"> * This file is part of the Money package.</token>
+  </line>
+  <line no="4">
+    <token name="T_COMMENT"> *</token>
+  </line>
+  <line no="5">
+    <token name="T_COMMENT"> * (c) Sebastian Bergmann &lt;sebastian@phpunit.de&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT"> *</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT"> * For the full copyright and license information, please view the LICENSE</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT"> * file that was distributed with this source code.</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT"> */</token>
+  </line>
+  <line no="10"/>
+  <line no="11">
+    <token name="T_NAMESPACE">namespace</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">SebastianBergmann</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Money</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> * Value Object that represents a monetary value</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> * (using a currency's smallest unit).</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> * @package    Money</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT"> * @author     Sebastian Bergmann &lt;sebastian@phpunit.de&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT"> * @copyright  Sebastian Bergmann &lt;sebastian@phpunit.de&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT"> * @license    http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT"> * @link       http://www.github.com/sebastianbergmann/money</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT"> * @see        http://martinfowler.com/bliki/ValueObject.html</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT"> * @see        http://martinfowler.com/eaaCatalog/money.html</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="25">
+    <token name="T_CLASS">class</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Money</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IMPLEMENTS">implements</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">JsonSerializable</token>
+  </line>
+  <line no="26">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="27">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT">     * @var integer</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="30">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PRIVATE">private</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$amount</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="31"/>
+  <line no="32">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT">     * @var \SebastianBergmann\Money\Currency</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="35">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PRIVATE">private</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$currency</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="36"/>
+  <line no="37">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT">     * @var integer[]</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="40">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PRIVATE">private</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STATIC">static</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$roundingModes</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="41">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_STRING">PHP_ROUND_HALF_UP</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="42">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_STRING">PHP_ROUND_HALF_DOWN</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="43">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_STRING">PHP_ROUND_HALF_EVEN</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="44">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_STRING">PHP_ROUND_HALF_ODD</token>
+  </line>
+  <line no="45">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="46"/>
+  <line no="47">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="48">
+    <token name="T_DOC_COMMENT">     * @param  integer                                  $amount</token>
+  </line>
+  <line no="49">
+    <token name="T_DOC_COMMENT">     * @param  \SebastianBergmann\Money\Currency|string $currency</token>
+  </line>
+  <line no="50">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\InvalidArgumentException</token>
+  </line>
+  <line no="51">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="52">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">__construct</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$amount</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$currency</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="53">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="54">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_EXCLAMATION_MARK">!</token>
+    <token name="T_STRING">is_int</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$amount</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="55">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_THROW">throw</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">InvalidArgumentException</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'$amount must be an integer'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="56">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="57"/>
+  <line no="58">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">amount</token>
+    <token name="T_WHITESPACE">   </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$amount</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="59">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">currency</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">handleCurrencyArgument</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$currency</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="60">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="61"/>
+  <line no="62">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="63">
+    <token name="T_DOC_COMMENT">     * Creates a Money object from a string such as "12.34"</token>
+  </line>
+  <line no="64">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="65">
+    <token name="T_DOC_COMMENT">     * This method is designed to take into account the errors that can arise</token>
+  </line>
+  <line no="66">
+    <token name="T_DOC_COMMENT">     * from manipulating floating point numbers.</token>
+  </line>
+  <line no="67">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="68">
+    <token name="T_DOC_COMMENT">     * If the number of decimals in the string is higher than the currency's</token>
+  </line>
+  <line no="69">
+    <token name="T_DOC_COMMENT">     * number of fractional digits then the value will be rounded to the</token>
+  </line>
+  <line no="70">
+    <token name="T_DOC_COMMENT">     * currency's number of fractional digits.</token>
+  </line>
+  <line no="71">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="72">
+    <token name="T_DOC_COMMENT">     * @param  string                                   $value</token>
+  </line>
+  <line no="73">
+    <token name="T_DOC_COMMENT">     * @param  \SebastianBergmann\Money\Currency|string $currency</token>
+  </line>
+  <line no="74">
+    <token name="T_DOC_COMMENT">     * @return static</token>
+  </line>
+  <line no="75">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\InvalidArgumentException</token>
+  </line>
+  <line no="76">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="77">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STATIC">static</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">fromString</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$currency</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="78">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="79">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_EXCLAMATION_MARK">!</token>
+    <token name="T_STRING">is_string</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="80">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_THROW">throw</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">InvalidArgumentException</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'$value must be a string'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="81">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="82"/>
+  <line no="83">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$currency</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">self</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">handleCurrencyArgument</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$currency</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="84"/>
+  <line no="85">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STATIC">static</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="86">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_STRING">intval</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="87">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_STRING">round</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="88">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_VARIABLE">$currency</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getSubUnit</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_MULT">*</token>
+  </line>
+  <line no="89">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_STRING">round</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="90">
+    <token name="T_WHITESPACE">                        </token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="91">
+    <token name="T_WHITESPACE">                        </token>
+    <token name="T_VARIABLE">$currency</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getDefaultFractionDigits</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="92">
+    <token name="T_WHITESPACE">                        </token>
+    <token name="T_STRING">PHP_ROUND_HALF_UP</token>
+  </line>
+  <line no="93">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="94">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="95">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_STRING">PHP_ROUND_HALF_UP</token>
+  </line>
+  <line no="96">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="97">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="98">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$currency</token>
+  </line>
+  <line no="99">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="100">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="101"/>
+  <line no="102">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="103">
+    <token name="T_DOC_COMMENT">     * Specify data which should be serialized to JSON</token>
+  </line>
+  <line no="104">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="105">
+    <token name="T_DOC_COMMENT">     * @return mixed data which can be serialized by &lt;b&gt;json_encode&lt;/b&gt;,</token>
+  </line>
+  <line no="106">
+    <token name="T_DOC_COMMENT">     * @link   http://php.net/manual/en/jsonserializable.jsonserialize.php</token>
+  </line>
+  <line no="107">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="108">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">jsonSerialize</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="109">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="110">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="111">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'amount'</token>
+    <token name="T_WHITESPACE">   </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">amount</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="112">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'currency'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">currency</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getCurrencyCode</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="113">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="114">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="115"/>
+  <line no="116">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="117">
+    <token name="T_DOC_COMMENT">     * Returns the monetary value represented by this object.</token>
+  </line>
+  <line no="118">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="119">
+    <token name="T_DOC_COMMENT">     * @return integer</token>
+  </line>
+  <line no="120">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="121">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">getAmount</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="122">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="123">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">amount</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="124">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="125"/>
+  <line no="126">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="127">
+    <token name="T_DOC_COMMENT">     * return the monetary value represented by this object converted to its base units</token>
+  </line>
+  <line no="128">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="129">
+    <token name="T_DOC_COMMENT">     * @return float</token>
+  </line>
+  <line no="130">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="131">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">getConvertedAmount</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="132">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="133">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">round</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">amount</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DIV">/</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">currency</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getSubUnit</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">currency</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getDefaultFractionDigits</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="134">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="135"/>
+  <line no="136">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="137">
+    <token name="T_DOC_COMMENT">     * Returns the currency of the monetary value represented by this</token>
+  </line>
+  <line no="138">
+    <token name="T_DOC_COMMENT">     * object.</token>
+  </line>
+  <line no="139">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="140">
+    <token name="T_DOC_COMMENT">     * @return \SebastianBergmann\Money\Currency</token>
+  </line>
+  <line no="141">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="142">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">getCurrency</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="143">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="144">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">currency</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="145">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="146"/>
+  <line no="147">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="148">
+    <token name="T_DOC_COMMENT">     * Returns a new Money object that represents the monetary value</token>
+  </line>
+  <line no="149">
+    <token name="T_DOC_COMMENT">     * of the sum of this Money object and another.</token>
+  </line>
+  <line no="150">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="151">
+    <token name="T_DOC_COMMENT">     * @param  \SebastianBergmann\Money\Money $other</token>
+  </line>
+  <line no="152">
+    <token name="T_DOC_COMMENT">     * @return static</token>
+  </line>
+  <line no="153">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\CurrencyMismatchException</token>
+  </line>
+  <line no="154">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\OverflowException</token>
+  </line>
+  <line no="155">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="156">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">add</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">Money</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="157">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="158">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">assertSameCurrency</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="159"/>
+  <line no="160">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">amount</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_PLUS">+</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getAmount</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="161"/>
+  <line no="162">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">assertIsInteger</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="163"/>
+  <line no="164">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">newMoney</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="165">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="166"/>
+  <line no="167">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="168">
+    <token name="T_DOC_COMMENT">     * Returns a new Money object that represents the monetary value</token>
+  </line>
+  <line no="169">
+    <token name="T_DOC_COMMENT">     * of the difference of this Money object and another.</token>
+  </line>
+  <line no="170">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="171">
+    <token name="T_DOC_COMMENT">     * @param  \SebastianBergmann\Money\Money $other</token>
+  </line>
+  <line no="172">
+    <token name="T_DOC_COMMENT">     * @return static</token>
+  </line>
+  <line no="173">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\CurrencyMismatchException</token>
+  </line>
+  <line no="174">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\OverflowException</token>
+  </line>
+  <line no="175">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="176">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">subtract</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">Money</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="177">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="178">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">assertSameCurrency</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="179"/>
+  <line no="180">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">amount</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_MINUS">-</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getAmount</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="181"/>
+  <line no="182">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">assertIsInteger</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="183"/>
+  <line no="184">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">newMoney</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="185">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="186"/>
+  <line no="187">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="188">
+    <token name="T_DOC_COMMENT">     * Returns a new Money object that represents the negated monetary value</token>
+  </line>
+  <line no="189">
+    <token name="T_DOC_COMMENT">     * of this Money object.</token>
+  </line>
+  <line no="190">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="191">
+    <token name="T_DOC_COMMENT">     * @return static</token>
+  </line>
+  <line no="192">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="193">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">negate</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="194">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="195">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">newMoney</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_MINUS">-</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_MULT">*</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">amount</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="196">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="197"/>
+  <line no="198">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="199">
+    <token name="T_DOC_COMMENT">     * Returns a new Money object that represents the monetary value</token>
+  </line>
+  <line no="200">
+    <token name="T_DOC_COMMENT">     * of this Money object multiplied by a given factor.</token>
+  </line>
+  <line no="201">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="202">
+    <token name="T_DOC_COMMENT">     * @param  float   $factor</token>
+  </line>
+  <line no="203">
+    <token name="T_DOC_COMMENT">     * @param  integer $roundingMode</token>
+  </line>
+  <line no="204">
+    <token name="T_DOC_COMMENT">     * @return static</token>
+  </line>
+  <line no="205">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\InvalidArgumentException</token>
+  </line>
+  <line no="206">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="207">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">multiply</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$factor</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$roundingMode</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">PHP_ROUND_HALF_UP</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="208">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="209">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_EXCLAMATION_MARK">!</token>
+    <token name="T_STRING">in_array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$roundingMode</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">self</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_VARIABLE">$roundingModes</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="210">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_THROW">throw</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">InvalidArgumentException</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="211">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'$roundingMode must be a valid rounding mode (PHP_ROUND_*)'</token>
+  </line>
+  <line no="212">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="213">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="214"/>
+  <line no="215">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">newMoney</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="216">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">castToInt</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="217">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_STRING">round</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$factor</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_MULT">*</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">amount</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$roundingMode</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="218">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="219">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="220">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="221"/>
+  <line no="222">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="223">
+    <token name="T_DOC_COMMENT">     * Allocate the monetary value represented by this Money object</token>
+  </line>
+  <line no="224">
+    <token name="T_DOC_COMMENT">     * among N targets.</token>
+  </line>
+  <line no="225">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="226">
+    <token name="T_DOC_COMMENT">     * @param  integer $n</token>
+  </line>
+  <line no="227">
+    <token name="T_DOC_COMMENT">     * @return static[]</token>
+  </line>
+  <line no="228">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\InvalidArgumentException</token>
+  </line>
+  <line no="229">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="230">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">allocateToTargets</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$n</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="231">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="232">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_EXCLAMATION_MARK">!</token>
+    <token name="T_STRING">is_int</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$n</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="233">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_THROW">throw</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">InvalidArgumentException</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'$n must be an integer'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="234">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="235"/>
+  <line no="236">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$low</token>
+    <token name="T_WHITESPACE">       </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">newMoney</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">intval</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">amount</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DIV">/</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$n</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="237">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$high</token>
+    <token name="T_WHITESPACE">      </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">newMoney</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$low</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getAmount</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_PLUS">+</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="238">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$remainder</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">amount</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_PERCENT">%</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$n</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="239">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="240"/>
+  <line no="241">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_FOR">for</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_LT">&lt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$remainder</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_INC">++</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="242">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$high</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="243">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="244"/>
+  <line no="245">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_FOR">for</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$remainder</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_LT">&lt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$n</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_INC">++</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="246">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$low</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="247">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="248"/>
+  <line no="249">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="250">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="251"/>
+  <line no="252">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="253">
+    <token name="T_DOC_COMMENT">     * Allocate the monetary value represented by this Money object</token>
+  </line>
+  <line no="254">
+    <token name="T_DOC_COMMENT">     * using a list of ratios.</token>
+  </line>
+  <line no="255">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="256">
+    <token name="T_DOC_COMMENT">     * @param  array $ratios</token>
+  </line>
+  <line no="257">
+    <token name="T_DOC_COMMENT">     * @return static[]</token>
+  </line>
+  <line no="258">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="259">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">allocateByRatios</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$ratios</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="260">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="261">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_DOC_COMMENT">/** @var \SebastianBergmann\Money\Money[] $result */</token>
+  </line>
+  <line no="262">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="263">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$total</token>
+    <token name="T_WHITESPACE">     </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">array_sum</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$ratios</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="264">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$remainder</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">amount</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="265"/>
+  <line no="266">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_FOR">for</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_LT">&lt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">count</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$ratios</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_INC">++</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="267">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$amount</token>
+    <token name="T_WHITESPACE">     </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">castToInt</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">amount</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_MULT">*</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$ratios</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DIV">/</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$total</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="268">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE">   </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">newMoney</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$amount</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="269">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$remainder</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_MINUS_EQUAL">-=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$amount</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="270">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="271"/>
+  <line no="272">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_FOR">for</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_LT">&lt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$remainder</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_INC">++</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="273">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">newMoney</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getAmount</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_PLUS">+</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="274">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="275"/>
+  <line no="276">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="277">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="278"/>
+  <line no="279">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="280">
+    <token name="T_DOC_COMMENT">     * Extracts a percentage of the monetary value represented by this Money</token>
+  </line>
+  <line no="281">
+    <token name="T_DOC_COMMENT">     * object and returns an array of two Money objects:</token>
+  </line>
+  <line no="282">
+    <token name="T_DOC_COMMENT">     * $original = $result['subtotal'] + $result['percentage'];</token>
+  </line>
+  <line no="283">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="284">
+    <token name="T_DOC_COMMENT">     * Please note that this extracts the percentage out of a monetary value</token>
+  </line>
+  <line no="285">
+    <token name="T_DOC_COMMENT">     * where the percentage is already included. If you want to get the</token>
+  </line>
+  <line no="286">
+    <token name="T_DOC_COMMENT">     * percentage of the monetary value you should use multiplication</token>
+  </line>
+  <line no="287">
+    <token name="T_DOC_COMMENT">     * (multiply(0.21), for instance, to calculate 21% of a monetary value</token>
+  </line>
+  <line no="288">
+    <token name="T_DOC_COMMENT">     * represented by a Money object) instead.</token>
+  </line>
+  <line no="289">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="290">
+    <token name="T_DOC_COMMENT">     * @param  float $percentage</token>
+  </line>
+  <line no="291">
+    <token name="T_DOC_COMMENT">     * @param  integer $roundingMode</token>
+  </line>
+  <line no="292">
+    <token name="T_DOC_COMMENT">     * @return static[]</token>
+  </line>
+  <line no="293">
+    <token name="T_DOC_COMMENT">     * @see    https://github.com/sebastianbergmann/money/issues/27</token>
+  </line>
+  <line no="294">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="295">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">extractPercentage</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$percentage</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$roundingMode</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">PHP_ROUND_HALF_UP</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="296">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="297">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$percentage</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">newMoney</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="298">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">castToInt</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+  </line>
+  <line no="299">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_STRING">round</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">amount</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DIV">/</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_LNUMBER">100</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_PLUS">+</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$percentage</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_MULT">*</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$percentage</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$roundingMode</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="300">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="301">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="302"/>
+  <line no="303">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="304">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'percentage'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$percentage</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="305">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'subtotal'</token>
+    <token name="T_WHITESPACE">   </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">subtract</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$percentage</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="306">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="307">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="308"/>
+  <line no="309">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="310">
+    <token name="T_DOC_COMMENT">     * Compares this Money object to another.</token>
+  </line>
+  <line no="311">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="312">
+    <token name="T_DOC_COMMENT">     * Returns an integer less than, equal to, or greater than zero</token>
+  </line>
+  <line no="313">
+    <token name="T_DOC_COMMENT">     * if the value of this Money object is considered to be respectively</token>
+  </line>
+  <line no="314">
+    <token name="T_DOC_COMMENT">     * less than, equal to, or greater than the other Money object.</token>
+  </line>
+  <line no="315">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="316">
+    <token name="T_DOC_COMMENT">     * @param  \SebastianBergmann\Money\Money $other</token>
+  </line>
+  <line no="317">
+    <token name="T_DOC_COMMENT">     * @return integer -1|0|1</token>
+  </line>
+  <line no="318">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\CurrencyMismatchException</token>
+  </line>
+  <line no="319">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="320">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">compareTo</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">Money</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="321">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="322">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">assertSameCurrency</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="323"/>
+  <line no="324">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">amount</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getAmount</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="325">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="326">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="327"/>
+  <line no="328">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">amount</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_LT">&lt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getAmount</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_QUESTION_MARK">?</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_MINUS">-</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="329">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="330"/>
+  <line no="331">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="332">
+    <token name="T_DOC_COMMENT">     * Returns TRUE if this Money object equals to another.</token>
+  </line>
+  <line no="333">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="334">
+    <token name="T_DOC_COMMENT">     * @param  \SebastianBergmann\Money\Money $other</token>
+  </line>
+  <line no="335">
+    <token name="T_DOC_COMMENT">     * @return boolean</token>
+  </line>
+  <line no="336">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\CurrencyMismatchException</token>
+  </line>
+  <line no="337">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="338">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">equals</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">Money</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="339">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="340">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">compareTo</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="341">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="342"/>
+  <line no="343">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="344">
+    <token name="T_DOC_COMMENT">     * Returns TRUE if the monetary value represented by this Money object</token>
+  </line>
+  <line no="345">
+    <token name="T_DOC_COMMENT">     * is greater than that of another, FALSE otherwise.</token>
+  </line>
+  <line no="346">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="347">
+    <token name="T_DOC_COMMENT">     * @param  \SebastianBergmann\Money\Money $other</token>
+  </line>
+  <line no="348">
+    <token name="T_DOC_COMMENT">     * @return boolean</token>
+  </line>
+  <line no="349">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\CurrencyMismatchException</token>
+  </line>
+  <line no="350">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="351">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">greaterThan</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">Money</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="352">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="353">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">compareTo</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="354">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="355"/>
+  <line no="356">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="357">
+    <token name="T_DOC_COMMENT">     * Returns TRUE if the monetary value represented by this Money object</token>
+  </line>
+  <line no="358">
+    <token name="T_DOC_COMMENT">     * is greater than or equal that of another, FALSE otherwise.</token>
+  </line>
+  <line no="359">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="360">
+    <token name="T_DOC_COMMENT">     * @param  \SebastianBergmann\Money\Money $other</token>
+  </line>
+  <line no="361">
+    <token name="T_DOC_COMMENT">     * @return boolean</token>
+  </line>
+  <line no="362">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\CurrencyMismatchException</token>
+  </line>
+  <line no="363">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="364">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">greaterThanOrEqual</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">Money</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="365">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="366">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">greaterThan</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_BOOLEAN_OR">||</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">equals</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="367">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="368"/>
+  <line no="369">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="370">
+    <token name="T_DOC_COMMENT">     * Returns TRUE if the monetary value represented by this Money object</token>
+  </line>
+  <line no="371">
+    <token name="T_DOC_COMMENT">     * is smaller than that of another, FALSE otherwise.</token>
+  </line>
+  <line no="372">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="373">
+    <token name="T_DOC_COMMENT">     * @param  \SebastianBergmann\Money\Money $other</token>
+  </line>
+  <line no="374">
+    <token name="T_DOC_COMMENT">     * @return boolean</token>
+  </line>
+  <line no="375">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\CurrencyMismatchException</token>
+  </line>
+  <line no="376">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="377">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">lessThan</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">Money</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="378">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="379">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">compareTo</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_MINUS">-</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="380">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="381"/>
+  <line no="382">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="383">
+    <token name="T_DOC_COMMENT">     * Returns TRUE if the monetary value represented by this Money object</token>
+  </line>
+  <line no="384">
+    <token name="T_DOC_COMMENT">     * is smaller than or equal that of another, FALSE otherwise.</token>
+  </line>
+  <line no="385">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="386">
+    <token name="T_DOC_COMMENT">     * @param  \SebastianBergmann\Money\Money $other</token>
+  </line>
+  <line no="387">
+    <token name="T_DOC_COMMENT">     * @return boolean</token>
+  </line>
+  <line no="388">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\CurrencyMismatchException</token>
+  </line>
+  <line no="389">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="390">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">lessThanOrEqual</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">Money</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="391">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="392">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">lessThan</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_BOOLEAN_OR">||</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">equals</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$other</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="393">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="394"/>
+  <line no="395">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="396">
+    <token name="T_DOC_COMMENT">     * @param  \SebastianBergmann\Money\Money $a</token>
+  </line>
+  <line no="397">
+    <token name="T_DOC_COMMENT">     * @param  \SebastianBergmann\Money\Money $b</token>
+  </line>
+  <line no="398">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\CurrencyMismatchException</token>
+  </line>
+  <line no="399">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="400">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PRIVATE">private</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">assertSameCurrency</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">Money</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$a</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Money</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$b</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="401">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="402">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$a</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getCurrency</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_NOT_EQUAL">!=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$b</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">getCurrency</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="403">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_THROW">throw</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">CurrencyMismatchException</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="404">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="405">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="406"/>
+  <line no="407">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="408">
+    <token name="T_DOC_COMMENT">     * Raises an exception if the amount is not an integer</token>
+  </line>
+  <line no="409">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="410">
+    <token name="T_DOC_COMMENT">     * @param  number $amount</token>
+  </line>
+  <line no="411">
+    <token name="T_DOC_COMMENT">     * @return number</token>
+  </line>
+  <line no="412">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\OverflowException</token>
+  </line>
+  <line no="413">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="414">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PRIVATE">private</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">assertIsInteger</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$amount</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="415">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="416">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_EXCLAMATION_MARK">!</token>
+    <token name="T_STRING">is_int</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$amount</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="417">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_THROW">throw</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">OverflowException</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="418">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="419">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_COMMENT">// @codeCoverageIgnore</token>
+  </line>
+  <line no="420"/>
+  <line no="421">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="422">
+    <token name="T_DOC_COMMENT">     * Raises an exception if the amount is outside of the integer bounds</token>
+  </line>
+  <line no="423">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="424">
+    <token name="T_DOC_COMMENT">     * @param  number $amount</token>
+  </line>
+  <line no="425">
+    <token name="T_DOC_COMMENT">     * @return number</token>
+  </line>
+  <line no="426">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\OverflowException</token>
+  </line>
+  <line no="427">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="428">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PRIVATE">private</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">assertInsideIntegerBounds</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$amount</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="429">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="430">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">abs</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$amount</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_GT">&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">PHP_INT_MAX</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="431">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_THROW">throw</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">OverflowException</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="432">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="433">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_COMMENT">// @codeCoverageIgnore</token>
+  </line>
+  <line no="434"/>
+  <line no="435">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="436">
+    <token name="T_DOC_COMMENT">     * Cast an amount to an integer but ensure that the operation won't hide overflow</token>
+  </line>
+  <line no="437">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="438">
+    <token name="T_DOC_COMMENT">     * @param number $amount</token>
+  </line>
+  <line no="439">
+    <token name="T_DOC_COMMENT">     * @return int</token>
+  </line>
+  <line no="440">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\OverflowException</token>
+  </line>
+  <line no="441">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="442">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PRIVATE">private</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">castToInt</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$amount</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="443">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="444">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">assertInsideIntegerBounds</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$amount</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="445"/>
+  <line no="446">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">intval</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$amount</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="447">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="448"/>
+  <line no="449">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="450">
+    <token name="T_DOC_COMMENT">     * @param  integer $amount</token>
+  </line>
+  <line no="451">
+    <token name="T_DOC_COMMENT">     * @return static</token>
+  </line>
+  <line no="452">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="453">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PRIVATE">private</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">newMoney</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$amount</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="454">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="455">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STATIC">static</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$amount</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$this</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">currency</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="456">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="457"/>
+  <line no="458">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="459">
+    <token name="T_DOC_COMMENT">     * @param  \SebastianBergmann\Money\Currency|string $currency</token>
+  </line>
+  <line no="460">
+    <token name="T_DOC_COMMENT">     * @return \SebastianBergmann\Money\Currency</token>
+  </line>
+  <line no="461">
+    <token name="T_DOC_COMMENT">     * @throws \SebastianBergmann\Money\InvalidArgumentException</token>
+  </line>
+  <line no="462">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="463">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PRIVATE">private</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STATIC">static</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">handleCurrencyArgument</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$currency</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="464">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="465">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_EXCLAMATION_MARK">!</token>
+    <token name="T_VARIABLE">$currency</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_INSTANCEOF">instanceof</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Currency</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_BOOLEAN_AND">&amp;&amp;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EXCLAMATION_MARK">!</token>
+    <token name="T_STRING">is_string</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$currency</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="466">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_THROW">throw</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">InvalidArgumentException</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'$currency must be an object of type Currency or a string'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="467">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="468"/>
+  <line no="469">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">is_string</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$currency</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="470">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$currency</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Currency</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$currency</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="471">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="472"/>
+  <line no="473">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$currency</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="474">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="475">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="476"/>
+</source>

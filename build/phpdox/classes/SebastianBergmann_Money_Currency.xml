@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SebastianBergmann\Money\Currency" namespace="SebastianBergmann\Money" name="Currency" abstract="false" final="false" start="26" end="1235">
+  <file path="../src" file="Currency.php" realpath="/home/dri/workspace/jenkins/test-project/src/Currency.php" size="34032" time="2016-09-21T18:04:51+00:00" unixtime="1474481091" sha1="88cf1a3c5a9fc18426ba4dc2b4b3ff48e6242637" relative="Currency.php"/>
+  <docblock>
+    <description compact="Value Object that represents a currency.">Loosely based on the java.util.Currency class of the Java SDK.</description>
+    <package value="Money"/>
+    <author value="Sebastian Bergmann &lt;sebastian@phpunit.de&gt;"/>
+    <copyright value="Sebastian Bergmann &lt;sebastian@phpunit.de&gt;"/>
+    <license name="http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License"/>
+    <link value="http://www.github.com/sebastianbergmann/money"/>
+    <see value="http://docs.oracle.com/javase/7/docs/api/java/util/Currency.html"/>
+    <suppresswarnings value="(PHPMD.ExcessiveClassLength)"/>
+  </docblock>
+  <member name="currencies" type="array" default="" visibility="private" static="true" line="31">
+    <docblock>
+      <description/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="currencyCode" visibility="private" static="false" line="1129">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="1135" end="1148" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$currencyCode"/>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\InvalidArgumentException" namespace="\SebastianBergmann\Money" name="InvalidArgumentException"/>
+      </throws>
+    </docblock>
+    <parameter name="currencyCode" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="addCurrency" start="1157" end="1165" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description/>
+      <param type="string" variable="$code"/>
+      <param type="string" variable="$displayName"/>
+      <param type="integer" variable="$numericCode"/>
+      <param type="integer" variable="$defaultFractionDigits"/>
+      <param type="integer" variable="$subUnit"/>
+    </docblock>
+    <parameter name="code" byreference="false" type="{unknown}"/>
+    <parameter name="displayName" byreference="false" type="{unknown}"/>
+    <parameter name="numericCode" byreference="false" type="{unknown}"/>
+    <parameter name="defaultFractionDigits" byreference="false" type="{unknown}"/>
+    <parameter name="subUnit" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getCurrencies" start="1170" end="1173" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description/>
+      <return description="the list of configured currencies" type="array"/>
+    </docblock>
+  </method>
+  <method name="getCurrencyCode" start="1180" end="1183" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the ISO 4217 currency code of this currency."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="getDefaultFractionDigits" start="1191" end="1194" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the default number of fraction digits used with this currency."/>
+      <return type="integer"/>
+    </docblock>
+  </method>
+  <method name="getDisplayName" start="1201" end="1204" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the name that is suitable for displaying this currency."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="getNumericCode" start="1211" end="1214" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the ISO 4217 numeric code of this currency."/>
+      <return type="integer"/>
+    </docblock>
+  </method>
+  <method name="getSubUnit" start="1221" end="1224" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the ISO 4217 numeric code of this currency."/>
+      <return type="integer"/>
+    </docblock>
+  </method>
+  <method name="__toString" start="1231" end="1234" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the ISO 4217 currency code of this currency."/>
+      <return type="string"/>
+    </docblock>
+  </method>
+</class>

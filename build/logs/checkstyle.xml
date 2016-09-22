@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="2.6.0">
+<file name="/home/dri/workspace/jenkins/test-project/src/exceptions/InvalidArgumentException.php">
+ <error line="20" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="23" column="77" severity="warning" message="Line exceeds 80 characters; contains 85 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/exceptions/OverflowException.php">
+ <error line="19" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/exceptions/CurrencyMismatchException.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/interfaces/Formatter.php">
+ <error line="19" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/interfaces/Exception.php">
+ <error line="19" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/CHF.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/BBD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/USD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/RUB.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/UAH.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/PYG.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/SHP.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/MUR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XUA.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/OMR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/RWF.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/GEL.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/HUF.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/UGX.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/EUR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XPT.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/CLP.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/HNL.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/NPR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/SYP.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/BAM.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/UYI.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/PEN.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/RON.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/MMK.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/IDR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/GMD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/CAD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/CRC.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/TOP.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XCD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XBB.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/CNY.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/COP.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/KWD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/VND.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/KZT.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/BHD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/ISK.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/GHS.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/MAD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/BWP.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/MNT.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/BIF.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/SDG.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/BZD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/QAR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XBA.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/SAR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XPF.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/KHR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/TTD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/DKK.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/BOB.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XOF.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/LYD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/MKD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/KES.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/MZN.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/LRD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XPD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XBD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/MYR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/LSL.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/COU.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/PLN.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/MVR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/KRW.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/PAB.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/NZD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XAU.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XAF.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/BND.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/ILS.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/ALL.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/DOP.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/AWG.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/MWK.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XTS.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/DJF.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/VUV.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/LKR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/KYD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/ZWL.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XDR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/MOP.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/BYR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/ZAR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/USS.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/FJD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/CVE.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/SZL.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/ARS.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/BGN.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XSU.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/VEF.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/LTL.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/JMD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/LAK.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/SVC.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/TZS.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/CDF.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/GTQ.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/MGA.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/DZD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/MRO.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/SBD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/WST.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/TMT.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/KPW.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/THB.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/AMD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/BSD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/GBP.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/MDL.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/AFN.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/AED.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/YER.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/ZMW.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/LBP.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/CLF.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/TND.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/CHW.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/BDT.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/GYD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/HKD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/HRK.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/SRD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/PHP.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/CZK.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/UZS.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/INR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/BTN.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/JOD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/MXV.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/HTG.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/JPY.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/CHE.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/TJS.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/NIO.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/NAD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/IQD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/RSD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/SEK.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/GNF.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/SCR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/USN.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/BRL.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/EGP.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/SLL.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/NGN.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/UYU.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/ETB.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/BMD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/SOS.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/KMF.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/ERN.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/MXN.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/PKR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/IRR.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/LVL.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/CUC.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/GIP.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/CUP.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XXX.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/AOA.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/AZN.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/AUD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XAG.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/FKP.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XBC.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/SGD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/TWD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/XFU.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/PGK.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/STD.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/BOV.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/SSP.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/NOK.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/ANG.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/currency/KGS.php">
+ <error line="17" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/IntlFormatter.php">
+ <error line="21" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="29" column="13" severity="error" message="Private member variable &quot;numberFormatter&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/Currency.php">
+ <error line="21" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="31" column="20" severity="error" message="Private member variable &quot;currencies&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ <error line="1023" column="84" severity="warning" message="Line exceeds 80 characters; contains 84 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="1029" column="86" severity="warning" message="Line exceeds 80 characters; contains 86 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="1095" column="94" severity="warning" message="Line exceeds 80 characters; contains 94 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="1129" column="13" severity="error" message="Private member variable &quot;currencyCode&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ <error line="1157" column="107" severity="warning" message="Line exceeds 80 characters; contains 107 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="1193" column="81" severity="warning" message="Line exceeds 80 characters; contains 81 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+<file name="/home/dri/workspace/jenkins/test-project/src/Money.php">
+ <error line="20" column="16" severity="warning" message="Line exceeds 80 characters; contains 88 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="30" column="13" severity="error" message="Private member variable &quot;amount&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ <error line="35" column="13" severity="error" message="Private member variable &quot;currency&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ <error line="40" column="20" severity="error" message="Private member variable &quot;roundingModes&quot; must contain a leading underscore" source="Zend.NamingConventions.ValidVariableName.PrivateNoUnderscore"/>
+ <error line="127" column="8" severity="warning" message="Line exceeds 80 characters; contains 87 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="133" column="113" severity="warning" message="Line exceeds 80 characters; contains 113 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="267" column="81" severity="warning" message="Line exceeds 80 characters; contains 81 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="295" column="85" severity="warning" message="Line exceeds 80 characters; contains 85 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="299" column="90" severity="warning" message="Line exceeds 80 characters; contains 90 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="436" column="8" severity="warning" message="Line exceeds 80 characters; contains 85 characters" source="Generic.Files.LineLength.TooLong"/>
+ <error line="466" column="107" severity="warning" message="Line exceeds 80 characters; contains 107 characters" source="Generic.Files.LineLength.TooLong"/>
+</file>
+</checkstyle>
+

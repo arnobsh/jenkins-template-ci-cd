@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:pu="http://schema.phpunit.de/coverage/1.0" lang="en">
+  <head>
+    <title>phpDox - Test Method</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../../index.html">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../../namespaces.html">Namespaces</a>
+        </li>
+        <li>
+          <a href="../../interfaces.html">Interfaces</a>
+        </li>
+        <li>
+          <a href="../../classes.html">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../../source/index.html">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../../index.html">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../../classes.html">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../../classes.html#SebastianBergmann_Money">SebastianBergmann\Money</a>
+          </li>
+          <li class="separator">
+            <a title="SebastianBergmann\Money\Money" href="../../classes/SebastianBergmann_Money_Money.html">Money</a>
+          </li>
+          <li class="separator">extractPercentage</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#parameter">Parameter</a>
+          </li>
+          <li>
+            <a href="#return">Return</a>
+          </li>
+          <li>
+            <a href="../../source/Money.php.html#line295">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1><small>SebastianBergmann\Money\Money::</small>extractPercentage</h1>
+        <h4>Extracts a percentage of the monetary value represented by this Money object and returns an array of two Money objects: $original = $result['subtotal'] + $result['percentage'];</h4>
+        <p>Please note that this extracts the percentage out of a monetary value
+where the percentage is already included. If you want to get the
+percentage of the monetary value you should use multiplication
+(multiply(0.21), for instance, to calculate 21% of a monetary value
+represented by a Money object) instead.</p>
+        <ul/>
+        <h2 id="signature">Signature</h2>
+        <div class="styled synopsis">
+          <code>public function extractPercentage(float
+        $percentage,
+            [integer
+        $roundingMode = PHP_ROUND_HALF_UP] )
+            </code>
+        </div>
+        <h2 id="parameterlist">Parameters</h2>
+        <dl class="styled">
+          <dt><code>$percentage</code>
+                —
+                float</dt>
+          <dd/>
+          <dt><code>$roundingMode</code>
+                —
+                integer</dt>
+          <dd/>
+        </dl>
+        <h2 id="return">Returns</h2>
+        <dl class="styled">
+          <dt>array</dt>
+          <dd><br/>
+        </dd>
+        </dl>
+        <h2 id="violations">Violations</h2>
+        <div class="styled">
+          <h3>Checkstyle</h3>
+          <table class="styled">
+            <thead>
+              <tr>
+                <th>Line</th>
+                <th>Column</th>
+                <th>Severity</th>
+                <th>Message</th>
+              </tr>
+            </thead>
+            <tr>
+              <td class="line">295</td>
+              <td>85</td>
+              <td>
+                <span title="Generic.Files.LineLength.TooLong">warning</span>
+              </td>
+              <td>Line exceeds 80 characters; contains 85 characters</td>
+            </tr>
+            <tr>
+              <td class="line">299</td>
+              <td>90</td>
+              <td>
+                <span title="Generic.Files.LineLength.TooLong">warning</span>
+              </td>
+              <td>Line exceeds 80 characters; contains 90 characters</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.8.1.1 - Copyright (C) 2010 - 2016 by Arne Blankerts</span>
+    </footer>
+  </body>
+</html>

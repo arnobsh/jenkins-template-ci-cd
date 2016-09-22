@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="SebastianBergmann\Money\Exception" namespace="SebastianBergmann\Money" name="Exception" abstract="false" final="false" start="22" end="24">
+  <file path="../src/interfaces" file="Exception.php" realpath="/home/dri/workspace/jenkins/test-project/src/interfaces/Exception.php" size="631" time="2016-09-21T18:04:51+00:00" unixtime="1474481091" sha1="b6a320689d56b780bc1bc503a89bfc8d2511eced" relative="interfaces/Exception.php"/>
+  <docblock>
+    <description compact="Marker interface for exceptions."/>
+    <package value="Money"/>
+    <author value="Sebastian Bergmann &lt;sebastian@phpunit.de&gt;"/>
+    <copyright value="Sebastian Bergmann &lt;sebastian@phpunit.de&gt;"/>
+    <license name="http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License"/>
+    <link value="http://www.github.com/sebastianbergmann/money"/>
+  </docblock>
+  <implementors>
+    <class full="SebastianBergmann\Money\InvalidArgumentException" namespace="SebastianBergmann\Money" name="InvalidArgumentException"/>
+    <class full="SebastianBergmann\Money\OverflowException" namespace="SebastianBergmann\Money" name="OverflowException"/>
+    <class full="SebastianBergmann\Money\CurrencyMismatchException" namespace="SebastianBergmann\Money" name="CurrencyMismatchException"/>
+  </implementors>
+</interface>

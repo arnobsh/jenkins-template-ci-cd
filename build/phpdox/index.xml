@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="/home/dri/workspace/jenkins/test-project/src">
+  <namespace name="SebastianBergmann\Money">
+    <class name="InvalidArgumentException" src="exceptions/InvalidArgumentException.php" description="Exception that is raised when invalid (scalar) arguments are passed to a method." xml="classes/SebastianBergmann_Money_InvalidArgumentException.xml"/>
+    <class name="OverflowException" src="exceptions/OverflowException.php" description="Exception that is throw when when an amount overflows valid integers" xml="classes/SebastianBergmann_Money_OverflowException.xml"/>
+    <class name="CurrencyMismatchException" src="exceptions/CurrencyMismatchException.php" xml="classes/SebastianBergmann_Money_CurrencyMismatchException.xml"/>
+    <interface name="Formatter" src="interfaces/Formatter.php" description="Interface for Money object formatters." xml="interfaces/SebastianBergmann_Money_Formatter.xml"/>
+    <interface name="Exception" src="interfaces/Exception.php" description="Marker interface for exceptions." xml="interfaces/SebastianBergmann_Money_Exception.xml"/>
+    <class name="CHF" src="currency/CHF.php" xml="classes/SebastianBergmann_Money_CHF.xml"/>
+    <class name="BBD" src="currency/BBD.php" xml="classes/SebastianBergmann_Money_BBD.xml"/>
+    <class name="USD" src="currency/USD.php" xml="classes/SebastianBergmann_Money_USD.xml"/>
+    <class name="RUB" src="currency/RUB.php" xml="classes/SebastianBergmann_Money_RUB.xml"/>
+    <class name="UAH" src="currency/UAH.php" xml="classes/SebastianBergmann_Money_UAH.xml"/>
+    <class name="PYG" src="currency/PYG.php" xml="classes/SebastianBergmann_Money_PYG.xml"/>
+    <class name="SHP" src="currency/SHP.php" xml="classes/SebastianBergmann_Money_SHP.xml"/>
+    <class name="MUR" src="currency/MUR.php" xml="classes/SebastianBergmann_Money_MUR.xml"/>
+    <class name="XUA" src="currency/XUA.php" xml="classes/SebastianBergmann_Money_XUA.xml"/>
+    <class name="OMR" src="currency/OMR.php" xml="classes/SebastianBergmann_Money_OMR.xml"/>
+    <class name="RWF" src="currency/RWF.php" xml="classes/SebastianBergmann_Money_RWF.xml"/>
+    <class name="GEL" src="currency/GEL.php" xml="classes/SebastianBergmann_Money_GEL.xml"/>
+    <class name="HUF" src="currency/HUF.php" xml="classes/SebastianBergmann_Money_HUF.xml"/>
+    <class name="UGX" src="currency/UGX.php" xml="classes/SebastianBergmann_Money_UGX.xml"/>
+    <class name="EUR" src="currency/EUR.php" xml="classes/SebastianBergmann_Money_EUR.xml"/>
+    <class name="XPT" src="currency/XPT.php" xml="classes/SebastianBergmann_Money_XPT.xml"/>
+    <class name="CLP" src="currency/CLP.php" xml="classes/SebastianBergmann_Money_CLP.xml"/>
+    <class name="HNL" src="currency/HNL.php" xml="classes/SebastianBergmann_Money_HNL.xml"/>
+    <class name="NPR" src="currency/NPR.php" xml="classes/SebastianBergmann_Money_NPR.xml"/>
+    <class name="SYP" src="currency/SYP.php" xml="classes/SebastianBergmann_Money_SYP.xml"/>
+    <class name="BAM" src="currency/BAM.php" xml="classes/SebastianBergmann_Money_BAM.xml"/>
+    <class name="UYI" src="currency/UYI.php" xml="classes/SebastianBergmann_Money_UYI.xml"/>
+    <class name="PEN" src="currency/PEN.php" xml="classes/SebastianBergmann_Money_PEN.xml"/>
+    <class name="RON" src="currency/RON.php" xml="classes/SebastianBergmann_Money_RON.xml"/>
+    <class name="MMK" src="currency/MMK.php" xml="classes/SebastianBergmann_Money_MMK.xml"/>
+    <class name="IDR" src="currency/IDR.php" xml="classes/SebastianBergmann_Money_IDR.xml"/>
+    <class name="GMD" src="currency/GMD.php" xml="classes/SebastianBergmann_Money_GMD.xml"/>
+    <class name="CAD" src="currency/CAD.php" xml="classes/SebastianBergmann_Money_CAD.xml"/>
+    <class name="CRC" src="currency/CRC.php" xml="classes/SebastianBergmann_Money_CRC.xml"/>
+    <class name="TOP" src="currency/TOP.php" xml="classes/SebastianBergmann_Money_TOP.xml"/>
+    <class name="XCD" src="currency/XCD.php" xml="classes/SebastianBergmann_Money_XCD.xml"/>
+    <class name="XBB" src="currency/XBB.php" xml="classes/SebastianBergmann_Money_XBB.xml"/>
+    <class name="CNY" src="currency/CNY.php" xml="classes/SebastianBergmann_Money_CNY.xml"/>
+    <class name="COP" src="currency/COP.php" xml="classes/SebastianBergmann_Money_COP.xml"/>
+    <class name="KWD" src="currency/KWD.php" xml="classes/SebastianBergmann_Money_KWD.xml"/>
+    <class name="VND" src="currency/VND.php" xml="classes/SebastianBergmann_Money_VND.xml"/>
+    <class name="KZT" src="currency/KZT.php" xml="classes/SebastianBergmann_Money_KZT.xml"/>
+    <class name="BHD" src="currency/BHD.php" xml="classes/SebastianBergmann_Money_BHD.xml"/>
+    <class name="ISK" src="currency/ISK.php" xml="classes/SebastianBergmann_Money_ISK.xml"/>
+    <class name="GHS" src="currency/GHS.php" xml="classes/SebastianBergmann_Money_GHS.xml"/>
+    <class name="MAD" src="currency/MAD.php" xml="classes/SebastianBergmann_Money_MAD.xml"/>
+    <class name="BWP" src="currency/BWP.php" xml="classes/SebastianBergmann_Money_BWP.xml"/>
+    <class name="MNT" src="currency/MNT.php" xml="classes/SebastianBergmann_Money_MNT.xml"/>
+    <class name="BIF" src="currency/BIF.php" xml="classes/SebastianBergmann_Money_BIF.xml"/>
+    <class name="SDG" src="currency/SDG.php" xml="classes/SebastianBergmann_Money_SDG.xml"/>
+    <class name="BZD" src="currency/BZD.php" xml="classes/SebastianBergmann_Money_BZD.xml"/>
+    <class name="QAR" src="currency/QAR.php" xml="classes/SebastianBergmann_Money_QAR.xml"/>
+    <class name="XBA" src="currency/XBA.php" xml="classes/SebastianBergmann_Money_XBA.xml"/>
+    <class name="SAR" src="currency/SAR.php" xml="classes/SebastianBergmann_Money_SAR.xml"/>
+    <class name="XPF" src="currency/XPF.php" xml="classes/SebastianBergmann_Money_XPF.xml"/>
+    <class name="KHR" src="currency/KHR.php" xml="classes/SebastianBergmann_Money_KHR.xml"/>
+    <class name="TTD" src="currency/TTD.php" xml="classes/SebastianBergmann_Money_TTD.xml"/>
+    <class name="DKK" src="currency/DKK.php" xml="classes/SebastianBergmann_Money_DKK.xml"/>
+    <class name="BOB" src="currency/BOB.php" xml="classes/SebastianBergmann_Money_BOB.xml"/>
+    <class name="XOF" src="currency/XOF.php" xml="classes/SebastianBergmann_Money_XOF.xml"/>
+    <class name="LYD" src="currency/LYD.php" xml="classes/SebastianBergmann_Money_LYD.xml"/>
+    <class name="MKD" src="currency/MKD.php" xml="classes/SebastianBergmann_Money_MKD.xml"/>
+    <class name="KES" src="currency/KES.php" xml="classes/SebastianBergmann_Money_KES.xml"/>
+    <class name="MZN" src="currency/MZN.php" xml="classes/SebastianBergmann_Money_MZN.xml"/>
+    <class name="LRD" src="currency/LRD.php" xml="classes/SebastianBergmann_Money_LRD.xml"/>
+    <class name="XPD" src="currency/XPD.php" xml="classes/SebastianBergmann_Money_XPD.xml"/>
+    <class name="XBD" src="currency/XBD.php" xml="classes/SebastianBergmann_Money_XBD.xml"/>
+    <class name="MYR" src="currency/MYR.php" xml="classes/SebastianBergmann_Money_MYR.xml"/>
+    <class name="LSL" src="currency/LSL.php" xml="classes/SebastianBergmann_Money_LSL.xml"/>
+    <class name="COU" src="currency/COU.php" xml="classes/SebastianBergmann_Money_COU.xml"/>
+    <class name="PLN" src="currency/PLN.php" xml="classes/SebastianBergmann_Money_PLN.xml"/>
+    <class name="MVR" src="currency/MVR.php" xml="classes/SebastianBergmann_Money_MVR.xml"/>
+    <class name="KRW" src="currency/KRW.php" xml="classes/SebastianBergmann_Money_KRW.xml"/>
+    <class name="PAB" src="currency/PAB.php" xml="classes/SebastianBergmann_Money_PAB.xml"/>
+    <class name="NZD" src="currency/NZD.php" xml="classes/SebastianBergmann_Money_NZD.xml"/>
+    <class name="XAU" src="currency/XAU.php" xml="classes/SebastianBergmann_Money_XAU.xml"/>
+    <class name="XAF" src="currency/XAF.php" xml="classes/SebastianBergmann_Money_XAF.xml"/>
+    <class name="BND" src="currency/BND.php" xml="classes/SebastianBergmann_Money_BND.xml"/>
+    <class name="ILS" src="currency/ILS.php" xml="classes/SebastianBergmann_Money_ILS.xml"/>
+    <class name="ALL" src="currency/ALL.php" xml="classes/SebastianBergmann_Money_ALL.xml"/>
+    <class name="DOP" src="currency/DOP.php" xml="classes/SebastianBergmann_Money_DOP.xml"/>
+    <class name="AWG" src="currency/AWG.php" xml="classes/SebastianBergmann_Money_AWG.xml"/>
+    <class name="MWK" src="currency/MWK.php" xml="classes/SebastianBergmann_Money_MWK.xml"/>
+    <class name="XTS" src="currency/XTS.php" xml="classes/SebastianBergmann_Money_XTS.xml"/>
+    <class name="DJF" src="currency/DJF.php" xml="classes/SebastianBergmann_Money_DJF.xml"/>
+    <class name="VUV" src="currency/VUV.php" xml="classes/SebastianBergmann_Money_VUV.xml"/>
+    <class name="LKR" src="currency/LKR.php" xml="classes/SebastianBergmann_Money_LKR.xml"/>
+    <class name="KYD" src="currency/KYD.php" xml="classes/SebastianBergmann_Money_KYD.xml"/>
+    <class name="ZWL" src="currency/ZWL.php" xml="classes/SebastianBergmann_Money_ZWL.xml"/>
+    <class name="XDR" src="currency/XDR.php" xml="classes/SebastianBergmann_Money_XDR.xml"/>
+    <class name="MOP" src="currency/MOP.php" xml="classes/SebastianBergmann_Money_MOP.xml"/>
+    <class name="BYR" src="currency/BYR.php" xml="classes/SebastianBergmann_Money_BYR.xml"/>
+    <class name="ZAR" src="currency/ZAR.php" xml="classes/SebastianBergmann_Money_ZAR.xml"/>
+    <class name="USS" src="currency/USS.php" xml="classes/SebastianBergmann_Money_USS.xml"/>
+    <class name="FJD" src="currency/FJD.php" xml="classes/SebastianBergmann_Money_FJD.xml"/>
+    <class name="CVE" src="currency/CVE.php" xml="classes/SebastianBergmann_Money_CVE.xml"/>
+    <class name="SZL" src="currency/SZL.php" xml="classes/SebastianBergmann_Money_SZL.xml"/>
+    <class name="ARS" src="currency/ARS.php" xml="classes/SebastianBergmann_Money_ARS.xml"/>
+    <class name="BGN" src="currency/BGN.php" xml="classes/SebastianBergmann_Money_BGN.xml"/>
+    <class name="XSU" src="currency/XSU.php" xml="classes/SebastianBergmann_Money_XSU.xml"/>
+    <class name="VEF" src="currency/VEF.php" xml="classes/SebastianBergmann_Money_VEF.xml"/>
+    <class name="LTL" src="currency/LTL.php" xml="classes/SebastianBergmann_Money_LTL.xml"/>
+    <class name="JMD" src="currency/JMD.php" xml="classes/SebastianBergmann_Money_JMD.xml"/>
+    <class name="LAK" src="currency/LAK.php" xml="classes/SebastianBergmann_Money_LAK.xml"/>
+    <class name="SVC" src="currency/SVC.php" xml="classes/SebastianBergmann_Money_SVC.xml"/>
+    <class name="TZS" src="currency/TZS.php" xml="classes/SebastianBergmann_Money_TZS.xml"/>
+    <class name="CDF" src="currency/CDF.php" xml="classes/SebastianBergmann_Money_CDF.xml"/>
+    <class name="GTQ" src="currency/GTQ.php" xml="classes/SebastianBergmann_Money_GTQ.xml"/>
+    <class name="MGA" src="currency/MGA.php" xml="classes/SebastianBergmann_Money_MGA.xml"/>
+    <class name="DZD" src="currency/DZD.php" xml="classes/SebastianBergmann_Money_DZD.xml"/>
+    <class name="MRO" src="currency/MRO.php" xml="classes/SebastianBergmann_Money_MRO.xml"/>
+    <class name="SBD" src="currency/SBD.php" xml="classes/SebastianBergmann_Money_SBD.xml"/>
+    <class name="WST" src="currency/WST.php" xml="classes/SebastianBergmann_Money_WST.xml"/>
+    <class name="TMT" src="currency/TMT.php" xml="classes/SebastianBergmann_Money_TMT.xml"/>
+    <class name="KPW" src="currency/KPW.php" xml="classes/SebastianBergmann_Money_KPW.xml"/>
+    <class name="THB" src="currency/THB.php" xml="classes/SebastianBergmann_Money_THB.xml"/>
+    <class name="AMD" src="currency/AMD.php" xml="classes/SebastianBergmann_Money_AMD.xml"/>
+    <class name="BSD" src="currency/BSD.php" xml="classes/SebastianBergmann_Money_BSD.xml"/>
+    <class name="GBP" src="currency/GBP.php" xml="classes/SebastianBergmann_Money_GBP.xml"/>
+    <class name="MDL" src="currency/MDL.php" xml="classes/SebastianBergmann_Money_MDL.xml"/>
+    <class name="AFN" src="currency/AFN.php" xml="classes/SebastianBergmann_Money_AFN.xml"/>
+    <class name="AED" src="currency/AED.php" xml="classes/SebastianBergmann_Money_AED.xml"/>
+    <class name="YER" src="currency/YER.php" xml="classes/SebastianBergmann_Money_YER.xml"/>
+    <class name="ZMW" src="currency/ZMW.php" xml="classes/SebastianBergmann_Money_ZMW.xml"/>
+    <class name="LBP" src="currency/LBP.php" xml="classes/SebastianBergmann_Money_LBP.xml"/>
+    <class name="CLF" src="currency/CLF.php" xml="classes/SebastianBergmann_Money_CLF.xml"/>
+    <class name="TND" src="currency/TND.php" xml="classes/SebastianBergmann_Money_TND.xml"/>
+    <class name="CHW" src="currency/CHW.php" xml="classes/SebastianBergmann_Money_CHW.xml"/>
+    <class name="BDT" src="currency/BDT.php" xml="classes/SebastianBergmann_Money_BDT.xml"/>
+    <class name="GYD" src="currency/GYD.php" xml="classes/SebastianBergmann_Money_GYD.xml"/>
+    <class name="HKD" src="currency/HKD.php" xml="classes/SebastianBergmann_Money_HKD.xml"/>
+    <class name="HRK" src="currency/HRK.php" xml="classes/SebastianBergmann_Money_HRK.xml"/>
+    <class name="SRD" src="currency/SRD.php" xml="classes/SebastianBergmann_Money_SRD.xml"/>
+    <class name="PHP" src="currency/PHP.php" xml="classes/SebastianBergmann_Money_PHP.xml"/>
+    <class name="CZK" src="currency/CZK.php" xml="classes/SebastianBergmann_Money_CZK.xml"/>
+    <class name="UZS" src="currency/UZS.php" xml="classes/SebastianBergmann_Money_UZS.xml"/>
+    <class name="INR" src="currency/INR.php" xml="classes/SebastianBergmann_Money_INR.xml"/>
+    <class name="BTN" src="currency/BTN.php" xml="classes/SebastianBergmann_Money_BTN.xml"/>
+    <class name="JOD" src="currency/JOD.php" xml="classes/SebastianBergmann_Money_JOD.xml"/>
+    <class name="MXV" src="currency/MXV.php" xml="classes/SebastianBergmann_Money_MXV.xml"/>
+    <class name="HTG" src="currency/HTG.php" xml="classes/SebastianBergmann_Money_HTG.xml"/>
+    <class name="JPY" src="currency/JPY.php" xml="classes/SebastianBergmann_Money_JPY.xml"/>
+    <class name="CHE" src="currency/CHE.php" xml="classes/SebastianBergmann_Money_CHE.xml"/>
+    <class name="TJS" src="currency/TJS.php" xml="classes/SebastianBergmann_Money_TJS.xml"/>
+    <class name="NIO" src="currency/NIO.php" xml="classes/SebastianBergmann_Money_NIO.xml"/>
+    <class name="NAD" src="currency/NAD.php" xml="classes/SebastianBergmann_Money_NAD.xml"/>
+    <class name="IQD" src="currency/IQD.php" xml="classes/SebastianBergmann_Money_IQD.xml"/>
+    <class name="RSD" src="currency/RSD.php" xml="classes/SebastianBergmann_Money_RSD.xml"/>
+    <class name="SEK" src="currency/SEK.php" xml="classes/SebastianBergmann_Money_SEK.xml"/>
+    <class name="GNF" src="currency/GNF.php" xml="classes/SebastianBergmann_Money_GNF.xml"/>
+    <class name="SCR" src="currency/SCR.php" xml="classes/SebastianBergmann_Money_SCR.xml"/>
+    <class name="USN" src="currency/USN.php" xml="classes/SebastianBergmann_Money_USN.xml"/>
+    <class name="BRL" src="currency/BRL.php" xml="classes/SebastianBergmann_Money_BRL.xml"/>
+    <class name="EGP" src="currency/EGP.php" xml="classes/SebastianBergmann_Money_EGP.xml"/>
+    <class name="SLL" src="currency/SLL.php" xml="classes/SebastianBergmann_Money_SLL.xml"/>
+    <class name="NGN" src="currency/NGN.php" xml="classes/SebastianBergmann_Money_NGN.xml"/>
+    <class name="UYU" src="currency/UYU.php" xml="classes/SebastianBergmann_Money_UYU.xml"/>
+    <class name="ETB" src="currency/ETB.php" xml="classes/SebastianBergmann_Money_ETB.xml"/>
+    <class name="BMD" src="currency/BMD.php" xml="classes/SebastianBergmann_Money_BMD.xml"/>
+    <class name="SOS" src="currency/SOS.php" xml="classes/SebastianBergmann_Money_SOS.xml"/>
+    <class name="KMF" src="currency/KMF.php" xml="classes/SebastianBergmann_Money_KMF.xml"/>
+    <class name="ERN" src="currency/ERN.php" xml="classes/SebastianBergmann_Money_ERN.xml"/>
+    <class name="MXN" src="currency/MXN.php" xml="classes/SebastianBergmann_Money_MXN.xml"/>
+    <class name="PKR" src="currency/PKR.php" xml="classes/SebastianBergmann_Money_PKR.xml"/>
+    <class name="IRR" src="currency/IRR.php" xml="classes/SebastianBergmann_Money_IRR.xml"/>
+    <class name="LVL" src="currency/LVL.php" xml="classes/SebastianBergmann_Money_LVL.xml"/>
+    <class name="CUC" src="currency/CUC.php" xml="classes/SebastianBergmann_Money_CUC.xml"/>
+    <class name="GIP" src="currency/GIP.php" xml="classes/SebastianBergmann_Money_GIP.xml"/>
+    <class name="CUP" src="currency/CUP.php" xml="classes/SebastianBergmann_Money_CUP.xml"/>
+    <class name="XXX" src="currency/XXX.php" xml="classes/SebastianBergmann_Money_XXX.xml"/>
+    <class name="AOA" src="currency/AOA.php" xml="classes/SebastianBergmann_Money_AOA.xml"/>
+    <class name="AZN" src="currency/AZN.php" xml="classes/SebastianBergmann_Money_AZN.xml"/>
+    <class name="AUD" src="currency/AUD.php" xml="classes/SebastianBergmann_Money_AUD.xml"/>
+    <class name="XAG" src="currency/XAG.php" xml="classes/SebastianBergmann_Money_XAG.xml"/>
+    <class name="FKP" src="currency/FKP.php" xml="classes/SebastianBergmann_Money_FKP.xml"/>
+    <class name="XBC" src="currency/XBC.php" xml="classes/SebastianBergmann_Money_XBC.xml"/>
+    <class name="SGD" src="currency/SGD.php" xml="classes/SebastianBergmann_Money_SGD.xml"/>
+    <class name="TWD" src="currency/TWD.php" xml="classes/SebastianBergmann_Money_TWD.xml"/>
+    <class name="XFU" src="currency/XFU.php" xml="classes/SebastianBergmann_Money_XFU.xml"/>
+    <class name="PGK" src="currency/PGK.php" xml="classes/SebastianBergmann_Money_PGK.xml"/>
+    <class name="STD" src="currency/STD.php" xml="classes/SebastianBergmann_Money_STD.xml"/>
+    <class name="BOV" src="currency/BOV.php" xml="classes/SebastianBergmann_Money_BOV.xml"/>
+    <class name="SSP" src="currency/SSP.php" xml="classes/SebastianBergmann_Money_SSP.xml"/>
+    <class name="NOK" src="currency/NOK.php" xml="classes/SebastianBergmann_Money_NOK.xml"/>
+    <class name="ANG" src="currency/ANG.php" xml="classes/SebastianBergmann_Money_ANG.xml"/>
+    <class name="KGS" src="currency/KGS.php" xml="classes/SebastianBergmann_Money_KGS.xml"/>
+    <class name="IntlFormatter" src="IntlFormatter.php" description="Formatter implementation that uses PHP's built-in NumberFormatter." xml="classes/SebastianBergmann_Money_IntlFormatter.xml"/>
+    <class name="Currency" src="Currency.php" description="Value Object that represents a currency." xml="classes/SebastianBergmann_Money_Currency.xml"/>
+    <class name="Money" src="Money.php" description="Value Object that represents a monetary value (using a currency's smallest unit)." xml="classes/SebastianBergmann_Money_Money.xml"/>
+  </namespace>
+  <namespace name="">
+    <class name="InvalidArgumentException" xml="classes/InvalidArgumentException.xml"/>
+    <class name="LogicException" xml="classes/LogicException.xml"/>
+    <class name="Exception" xml="classes/Exception.xml"/>
+    <class name="OverflowException" xml="classes/OverflowException.xml"/>
+    <class name="RuntimeException" xml="classes/RuntimeException.xml"/>
+    <interface name="JsonSerializable" xml="interfaces/JsonSerializable.xml"/>
+  </namespace>
+</index>

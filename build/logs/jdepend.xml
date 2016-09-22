@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PDepend>
+  <Packages>
+    <Package name="SebastianBergmann\Money">
+      <Stats>
+        <TotalClasses>189</TotalClasses>
+        <ConcreteClasses>187</ConcreteClasses>
+        <AbstractClasses>2</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0.010582010582011</A>
+        <I>1</I>
+        <D>0.010582010582011</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/Currency.php">Currency</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/IntlFormatter.php">IntlFormatter</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/Money.php">Money</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/AED.php">AED</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/AFN.php">AFN</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/ALL.php">ALL</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/AMD.php">AMD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/ANG.php">ANG</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/AOA.php">AOA</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/ARS.php">ARS</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/AUD.php">AUD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/AWG.php">AWG</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/AZN.php">AZN</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/BAM.php">BAM</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/BBD.php">BBD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/BDT.php">BDT</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/BGN.php">BGN</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/BHD.php">BHD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/BIF.php">BIF</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/BMD.php">BMD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/BND.php">BND</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/BOB.php">BOB</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/BOV.php">BOV</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/BRL.php">BRL</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/BSD.php">BSD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/BTN.php">BTN</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/BWP.php">BWP</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/BYR.php">BYR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/BZD.php">BZD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/CAD.php">CAD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/CDF.php">CDF</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/CHE.php">CHE</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/CHF.php">CHF</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/CHW.php">CHW</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/CLF.php">CLF</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/CLP.php">CLP</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/CNY.php">CNY</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/COP.php">COP</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/COU.php">COU</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/CRC.php">CRC</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/CUC.php">CUC</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/CUP.php">CUP</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/CVE.php">CVE</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/CZK.php">CZK</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/DJF.php">DJF</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/DKK.php">DKK</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/DOP.php">DOP</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/DZD.php">DZD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/EGP.php">EGP</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/ERN.php">ERN</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/ETB.php">ETB</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/EUR.php">EUR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/FJD.php">FJD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/FKP.php">FKP</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/GBP.php">GBP</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/GEL.php">GEL</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/GHS.php">GHS</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/GIP.php">GIP</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/GMD.php">GMD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/GNF.php">GNF</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/GTQ.php">GTQ</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/GYD.php">GYD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/HKD.php">HKD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/HNL.php">HNL</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/HRK.php">HRK</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/HTG.php">HTG</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/HUF.php">HUF</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/IDR.php">IDR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/ILS.php">ILS</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/INR.php">INR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/IQD.php">IQD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/IRR.php">IRR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/ISK.php">ISK</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/JMD.php">JMD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/JOD.php">JOD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/JPY.php">JPY</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/KES.php">KES</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/KGS.php">KGS</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/KHR.php">KHR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/KMF.php">KMF</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/KPW.php">KPW</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/KRW.php">KRW</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/KWD.php">KWD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/KYD.php">KYD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/KZT.php">KZT</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/LAK.php">LAK</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/LBP.php">LBP</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/LKR.php">LKR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/LRD.php">LRD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/LSL.php">LSL</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/LTL.php">LTL</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/LVL.php">LVL</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/LYD.php">LYD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/MAD.php">MAD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/MDL.php">MDL</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/MGA.php">MGA</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/MKD.php">MKD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/MMK.php">MMK</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/MNT.php">MNT</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/MOP.php">MOP</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/MRO.php">MRO</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/MUR.php">MUR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/MVR.php">MVR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/MWK.php">MWK</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/MXN.php">MXN</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/MXV.php">MXV</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/MYR.php">MYR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/MZN.php">MZN</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/NAD.php">NAD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/NGN.php">NGN</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/NIO.php">NIO</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/NOK.php">NOK</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/NPR.php">NPR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/NZD.php">NZD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/OMR.php">OMR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/PAB.php">PAB</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/PEN.php">PEN</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/PGK.php">PGK</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/PHP.php">PHP</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/PKR.php">PKR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/PLN.php">PLN</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/PYG.php">PYG</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/QAR.php">QAR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/RON.php">RON</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/RSD.php">RSD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/RUB.php">RUB</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/RWF.php">RWF</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/SAR.php">SAR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/SBD.php">SBD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/SCR.php">SCR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/SDG.php">SDG</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/SEK.php">SEK</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/SGD.php">SGD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/SHP.php">SHP</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/SLL.php">SLL</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/SOS.php">SOS</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/SRD.php">SRD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/SSP.php">SSP</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/STD.php">STD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/SVC.php">SVC</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/SYP.php">SYP</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/SZL.php">SZL</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/THB.php">THB</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/TJS.php">TJS</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/TMT.php">TMT</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/TND.php">TND</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/TOP.php">TOP</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/TTD.php">TTD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/TWD.php">TWD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/TZS.php">TZS</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/UAH.php">UAH</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/UGX.php">UGX</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/USD.php">USD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/USN.php">USN</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/USS.php">USS</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/UYI.php">UYI</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/UYU.php">UYU</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/UZS.php">UZS</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/VEF.php">VEF</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/VND.php">VND</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/VUV.php">VUV</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/WST.php">WST</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XAF.php">XAF</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XAG.php">XAG</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XAU.php">XAU</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XBA.php">XBA</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XBB.php">XBB</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XBC.php">XBC</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XBD.php">XBD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XCD.php">XCD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XDR.php">XDR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XFU.php">XFU</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XOF.php">XOF</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XPD.php">XPD</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XPF.php">XPF</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XPT.php">XPT</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XSU.php">XSU</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XTS.php">XTS</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XUA.php">XUA</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/XXX.php">XXX</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/YER.php">YER</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/ZAR.php">ZAR</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/ZMW.php">ZMW</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/currency/ZWL.php">ZWL</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/exceptions/CurrencyMismatchException.php">CurrencyMismatchException</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/exceptions/InvalidArgumentException.php">InvalidArgumentException</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/exceptions/OverflowException.php">OverflowException</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/interfaces/Exception.php">Exception</Class>
+        <Class sourceFile="/home/dri/workspace/jenkins/test-project/src/interfaces/Formatter.php">Formatter</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package></Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+  </Packages>
+  <Cycles/>
+</PDepend>

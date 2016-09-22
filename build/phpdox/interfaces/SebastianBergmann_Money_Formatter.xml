@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="SebastianBergmann\Money\Formatter" namespace="SebastianBergmann\Money" name="Formatter" abstract="false" final="false" start="22" end="31">
+  <file path="../src/interfaces" file="Formatter.php" realpath="/home/dri/workspace/jenkins/test-project/src/interfaces/Formatter.php" size="808" time="2016-09-21T18:04:51+00:00" unixtime="1474481091" sha1="16a9779523879daede2794c04ab74c1a9c4c84e4" relative="interfaces/Formatter.php"/>
+  <docblock>
+    <description compact="Interface for Money object formatters."/>
+    <package value="Money"/>
+    <author value="Sebastian Bergmann &lt;sebastian@phpunit.de&gt;"/>
+    <copyright value="Sebastian Bergmann &lt;sebastian@phpunit.de&gt;"/>
+    <license name="http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License"/>
+    <link value="http://www.github.com/sebastianbergmann/money"/>
+  </docblock>
+  <method name="format" start="30" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Formats a Money object."/>
+      <param type="object" variable="$money">
+        <type full="\SebastianBergmann\Money\Money" namespace="\SebastianBergmann\Money" name="Money"/>
+      </param>
+      <return type="string"/>
+    </docblock>
+    <parameter name="money" byreference="false" type="object">
+      <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+    </parameter>
+  </method>
+  <implementors>
+    <class full="SebastianBergmann\Money\IntlFormatter" namespace="SebastianBergmann\Money" name="IntlFormatter"/>
+  </implementors>
+</interface>

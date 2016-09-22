@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money" abstract="false" final="false" start="25" end="475">
+  <file path="../src" file="Money.php" realpath="/home/dri/workspace/jenkins/test-project/src/Money.php" size="13915" time="2016-09-21T18:04:51+00:00" unixtime="1474481091" sha1="b3a6c392034df622c1215ffb36688ad33f9faae3" relative="Money.php"/>
+  <docblock>
+    <description compact="Value Object that represents a monetary value (using a currency's smallest unit)."/>
+    <package value="Money"/>
+    <author value="Sebastian Bergmann &lt;sebastian@phpunit.de&gt;"/>
+    <copyright value="Sebastian Bergmann &lt;sebastian@phpunit.de&gt;"/>
+    <license name="http://www.opensource.org/licenses/BSD-3-Clause  The BSD 3-Clause License"/>
+    <link value="http://www.github.com/sebastianbergmann/money"/>
+    <see value="http://martinfowler.com/bliki/ValueObject.html"/>
+    <see value="http://martinfowler.com/eaaCatalog/money.html"/>
+  </docblock>
+  <implements full="JsonSerializable" namespace="" name="JsonSerializable"/>
+  <member name="amount" visibility="private" static="false" line="30">
+    <docblock>
+      <description/>
+      <var type="integer"/>
+    </docblock>
+  </member>
+  <member name="currency" visibility="private" static="false" line="35">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="\SebastianBergmann\Money\Currency" namespace="\SebastianBergmann\Money" name="Currency"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="roundingModes" type="array" default="" visibility="private" static="true" line="40">
+    <docblock>
+      <description/>
+      <var type="array" of="object">
+        <type full="SebastianBergmann\Money\integer" namespace="SebastianBergmann\Money" name="integer"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="52" end="60" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="integer" variable="$amount"/>
+      <param type="object" variable="$currency">
+        <type full="\SebastianBergmann\Money\Currency|string" namespace="\SebastianBergmann\Money" name="Currency|string"/>
+      </param>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\InvalidArgumentException" namespace="\SebastianBergmann\Money" name="InvalidArgumentException"/>
+      </throws>
+    </docblock>
+    <parameter name="amount" byreference="false" type="{unknown}"/>
+    <parameter name="currency" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="fromString" start="77" end="100" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Creates a Money object from a string such as &quot;12.34&quot;">This method is designed to take into account the errors that can arise
+from manipulating floating point numbers.
+
+If the number of decimals in the string is higher than the currency's
+number of fractional digits then the value will be rounded to the
+currency's number of fractional digits.</description>
+      <param type="string" variable="$value"/>
+      <param type="object" variable="$currency">
+        <type full="\SebastianBergmann\Money\Currency|string" namespace="\SebastianBergmann\Money" name="Currency|string"/>
+      </param>
+      <return resolution="static" type="object">
+        <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+      </return>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\InvalidArgumentException" namespace="\SebastianBergmann\Money" name="InvalidArgumentException"/>
+      </throws>
+    </docblock>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+    <parameter name="currency" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="jsonSerialize" start="108" end="114" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Specify data which should be serialized to JSON"/>
+      <return description="data which can be serialized by &lt;b&gt;json_encode&lt;/b&gt;," type="mixed"/>
+      <link value="http://php.net/manual/en/jsonserializable.jsonserialize.php"/>
+    </docblock>
+  </method>
+  <method name="getAmount" start="121" end="124" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the monetary value represented by this object."/>
+      <return type="integer"/>
+    </docblock>
+  </method>
+  <method name="getConvertedAmount" start="131" end="134" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="return the monetary value represented by this object converted to its base units"/>
+      <return type="float"/>
+    </docblock>
+  </method>
+  <method name="getCurrency" start="142" end="145" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the currency of the monetary value represented by this object."/>
+      <return type="object">
+        <type full="\SebastianBergmann\Money\Currency" namespace="\SebastianBergmann\Money" name="Currency"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="add" start="156" end="165" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns a new Money object that represents the monetary value of the sum of this Money object and another."/>
+      <param type="object" variable="$other">
+        <type full="\SebastianBergmann\Money\Money" namespace="\SebastianBergmann\Money" name="Money"/>
+      </param>
+      <return resolution="static" type="object">
+        <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+      </return>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\CurrencyMismatchException" namespace="\SebastianBergmann\Money" name="CurrencyMismatchException"/>
+      </throws>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\OverflowException" namespace="\SebastianBergmann\Money" name="OverflowException"/>
+      </throws>
+    </docblock>
+    <parameter name="other" byreference="false" type="object">
+      <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+    </parameter>
+  </method>
+  <method name="subtract" start="176" end="185" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns a new Money object that represents the monetary value of the difference of this Money object and another."/>
+      <param type="object" variable="$other">
+        <type full="\SebastianBergmann\Money\Money" namespace="\SebastianBergmann\Money" name="Money"/>
+      </param>
+      <return resolution="static" type="object">
+        <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+      </return>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\CurrencyMismatchException" namespace="\SebastianBergmann\Money" name="CurrencyMismatchException"/>
+      </throws>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\OverflowException" namespace="\SebastianBergmann\Money" name="OverflowException"/>
+      </throws>
+    </docblock>
+    <parameter name="other" byreference="false" type="object">
+      <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+    </parameter>
+  </method>
+  <method name="negate" start="193" end="196" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns a new Money object that represents the negated monetary value of this Money object."/>
+      <return resolution="static" type="object">
+        <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="multiply" start="207" end="220" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns a new Money object that represents the monetary value of this Money object multiplied by a given factor."/>
+      <param type="float" variable="$factor"/>
+      <param type="integer" variable="$roundingMode"/>
+      <return resolution="static" type="object">
+        <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+      </return>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\InvalidArgumentException" namespace="\SebastianBergmann\Money" name="InvalidArgumentException"/>
+      </throws>
+    </docblock>
+    <parameter name="factor" byreference="false" type="{unknown}"/>
+    <parameter name="roundingMode" byreference="false" type="{unknown}" default="" constant="PHP_ROUND_HALF_UP"/>
+  </method>
+  <method name="allocateToTargets" start="230" end="250" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Allocate the monetary value represented by this Money object among N targets."/>
+      <param type="integer" variable="$n"/>
+      <return type="array" of="object">
+        <type full="SebastianBergmann\Money\static" namespace="SebastianBergmann\Money" name="static"/>
+      </return>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\InvalidArgumentException" namespace="\SebastianBergmann\Money" name="InvalidArgumentException"/>
+      </throws>
+    </docblock>
+    <parameter name="n" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="allocateByRatios" start="259" end="277" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Allocate the monetary value represented by this Money object using a list of ratios."/>
+      <param type="array" variable="$ratios"/>
+      <return type="array" of="object">
+        <type full="SebastianBergmann\Money\static" namespace="SebastianBergmann\Money" name="static"/>
+      </return>
+    </docblock>
+    <parameter name="ratios" byreference="false" type="array"/>
+  </method>
+  <method name="extractPercentage" start="295" end="307" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Extracts a percentage of the monetary value represented by this Money object and returns an array of two Money objects: $original = $result['subtotal'] + $result['percentage'];">Please note that this extracts the percentage out of a monetary value
+where the percentage is already included. If you want to get the
+percentage of the monetary value you should use multiplication
+(multiply(0.21), for instance, to calculate 21% of a monetary value
+represented by a Money object) instead.</description>
+      <param type="float" variable="$percentage"/>
+      <param type="integer" variable="$roundingMode"/>
+      <return type="array" of="object">
+        <type full="SebastianBergmann\Money\static" namespace="SebastianBergmann\Money" name="static"/>
+      </return>
+      <see value="https://github.com/sebastianbergmann/money/issues/27"/>
+    </docblock>
+    <parameter name="percentage" byreference="false" type="{unknown}"/>
+    <parameter name="roundingMode" byreference="false" type="{unknown}" default="" constant="PHP_ROUND_HALF_UP"/>
+  </method>
+  <method name="compareTo" start="320" end="329" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Compares this Money object to another.">Returns an integer less than, equal to, or greater than zero
+if the value of this Money object is considered to be respectively
+less than, equal to, or greater than the other Money object.</description>
+      <param type="object" variable="$other">
+        <type full="\SebastianBergmann\Money\Money" namespace="\SebastianBergmann\Money" name="Money"/>
+      </param>
+      <return description="-1|0|1" type="integer"/>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\CurrencyMismatchException" namespace="\SebastianBergmann\Money" name="CurrencyMismatchException"/>
+      </throws>
+    </docblock>
+    <parameter name="other" byreference="false" type="object">
+      <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+    </parameter>
+  </method>
+  <method name="equals" start="338" end="341" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns TRUE if this Money object equals to another."/>
+      <param type="object" variable="$other">
+        <type full="\SebastianBergmann\Money\Money" namespace="\SebastianBergmann\Money" name="Money"/>
+      </param>
+      <return type="boolean"/>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\CurrencyMismatchException" namespace="\SebastianBergmann\Money" name="CurrencyMismatchException"/>
+      </throws>
+    </docblock>
+    <parameter name="other" byreference="false" type="object">
+      <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+    </parameter>
+  </method>
+  <method name="greaterThan" start="351" end="354" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns TRUE if the monetary value represented by this Money object is greater than that of another, FALSE otherwise."/>
+      <param type="object" variable="$other">
+        <type full="\SebastianBergmann\Money\Money" namespace="\SebastianBergmann\Money" name="Money"/>
+      </param>
+      <return type="boolean"/>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\CurrencyMismatchException" namespace="\SebastianBergmann\Money" name="CurrencyMismatchException"/>
+      </throws>
+    </docblock>
+    <parameter name="other" byreference="false" type="object">
+      <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+    </parameter>
+  </method>
+  <method name="greaterThanOrEqual" start="364" end="367" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns TRUE if the monetary value represented by this Money object is greater than or equal that of another, FALSE otherwise."/>
+      <param type="object" variable="$other">
+        <type full="\SebastianBergmann\Money\Money" namespace="\SebastianBergmann\Money" name="Money"/>
+      </param>
+      <return type="boolean"/>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\CurrencyMismatchException" namespace="\SebastianBergmann\Money" name="CurrencyMismatchException"/>
+      </throws>
+    </docblock>
+    <parameter name="other" byreference="false" type="object">
+      <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+    </parameter>
+  </method>
+  <method name="lessThan" start="377" end="380" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns TRUE if the monetary value represented by this Money object is smaller than that of another, FALSE otherwise."/>
+      <param type="object" variable="$other">
+        <type full="\SebastianBergmann\Money\Money" namespace="\SebastianBergmann\Money" name="Money"/>
+      </param>
+      <return type="boolean"/>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\CurrencyMismatchException" namespace="\SebastianBergmann\Money" name="CurrencyMismatchException"/>
+      </throws>
+    </docblock>
+    <parameter name="other" byreference="false" type="object">
+      <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+    </parameter>
+  </method>
+  <method name="lessThanOrEqual" start="390" end="393" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns TRUE if the monetary value represented by this Money object is smaller than or equal that of another, FALSE otherwise."/>
+      <param type="object" variable="$other">
+        <type full="\SebastianBergmann\Money\Money" namespace="\SebastianBergmann\Money" name="Money"/>
+      </param>
+      <return type="boolean"/>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\CurrencyMismatchException" namespace="\SebastianBergmann\Money" name="CurrencyMismatchException"/>
+      </throws>
+    </docblock>
+    <parameter name="other" byreference="false" type="object">
+      <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+    </parameter>
+  </method>
+  <method name="assertSameCurrency" start="400" end="405" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param type="object" variable="$a">
+        <type full="\SebastianBergmann\Money\Money" namespace="\SebastianBergmann\Money" name="Money"/>
+      </param>
+      <param type="object" variable="$b">
+        <type full="\SebastianBergmann\Money\Money" namespace="\SebastianBergmann\Money" name="Money"/>
+      </param>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\CurrencyMismatchException" namespace="\SebastianBergmann\Money" name="CurrencyMismatchException"/>
+      </throws>
+    </docblock>
+    <parameter name="a" byreference="false" type="object">
+      <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+    </parameter>
+    <parameter name="b" byreference="false" type="object">
+      <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+    </parameter>
+  </method>
+  <method name="assertIsInteger" start="414" end="419" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Raises an exception if the amount is not an integer"/>
+      <param type="object" variable="$amount">
+        <type full="SebastianBergmann\Money\number" namespace="SebastianBergmann\Money" name="number"/>
+      </param>
+      <return type="object">
+        <type full="SebastianBergmann\Money\number" namespace="SebastianBergmann\Money" name="number"/>
+      </return>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\OverflowException" namespace="\SebastianBergmann\Money" name="OverflowException"/>
+      </throws>
+    </docblock>
+    <parameter name="amount" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="assertInsideIntegerBounds" start="428" end="433" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Raises an exception if the amount is outside of the integer bounds"/>
+      <param type="object" variable="$amount">
+        <type full="SebastianBergmann\Money\number" namespace="SebastianBergmann\Money" name="number"/>
+      </param>
+      <return type="object">
+        <type full="SebastianBergmann\Money\number" namespace="SebastianBergmann\Money" name="number"/>
+      </return>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\OverflowException" namespace="\SebastianBergmann\Money" name="OverflowException"/>
+      </throws>
+    </docblock>
+    <parameter name="amount" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="castToInt" start="442" end="447" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Cast an amount to an integer but ensure that the operation won't hide overflow"/>
+      <param type="object" variable="$amount">
+        <type full="SebastianBergmann\Money\number" namespace="SebastianBergmann\Money" name="number"/>
+      </param>
+      <return type="int"/>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\OverflowException" namespace="\SebastianBergmann\Money" name="OverflowException"/>
+      </throws>
+    </docblock>
+    <parameter name="amount" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="newMoney" start="453" end="456" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param type="integer" variable="$amount"/>
+      <return resolution="static" type="object">
+        <type full="SebastianBergmann\Money\Money" namespace="SebastianBergmann\Money" name="Money"/>
+      </return>
+    </docblock>
+    <parameter name="amount" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="handleCurrencyArgument" start="463" end="474" abstract="false" final="false" static="true" visibility="private">
+    <docblock>
+      <description/>
+      <param type="object" variable="$currency">
+        <type full="\SebastianBergmann\Money\Currency|string" namespace="\SebastianBergmann\Money" name="Currency|string"/>
+      </param>
+      <return type="object">
+        <type full="\SebastianBergmann\Money\Currency" namespace="\SebastianBergmann\Money" name="Currency"/>
+      </return>
+      <throws type="object">
+        <type full="\SebastianBergmann\Money\InvalidArgumentException" namespace="\SebastianBergmann\Money" name="InvalidArgumentException"/>
+      </throws>
+    </docblock>
+    <parameter name="currency" byreference="false" type="{unknown}"/>
+  </method>
+  <extenders>
+    <extender full="SebastianBergmann\Money\CHF" namespace="SebastianBergmann\Money" name="CHF"/>
+    <extender full="SebastianBergmann\Money\BBD" namespace="SebastianBergmann\Money" name="BBD"/>
+    <extender full="SebastianBergmann\Money\USD" namespace="SebastianBergmann\Money" name="USD"/>
+    <extender full="SebastianBergmann\Money\RUB" namespace="SebastianBergmann\Money" name="RUB"/>
+    <extender full="SebastianBergmann\Money\UAH" namespace="SebastianBergmann\Money" name="UAH"/>
+    <extender full="SebastianBergmann\Money\PYG" namespace="SebastianBergmann\Money" name="PYG"/>
+    <extender full="SebastianBergmann\Money\SHP" namespace="SebastianBergmann\Money" name="SHP"/>
+    <extender full="SebastianBergmann\Money\MUR" namespace="SebastianBergmann\Money" name="MUR"/>
+    <extender full="SebastianBergmann\Money\XUA" namespace="SebastianBergmann\Money" name="XUA"/>
+    <extender full="SebastianBergmann\Money\OMR" namespace="SebastianBergmann\Money" name="OMR"/>
+    <extender full="SebastianBergmann\Money\RWF" namespace="SebastianBergmann\Money" name="RWF"/>
+    <extender full="SebastianBergmann\Money\GEL" namespace="SebastianBergmann\Money" name="GEL"/>
+    <extender full="SebastianBergmann\Money\HUF" namespace="SebastianBergmann\Money" name="HUF"/>
+    <extender full="SebastianBergmann\Money\UGX" namespace="SebastianBergmann\Money" name="UGX"/>
+    <extender full="SebastianBergmann\Money\EUR" namespace="SebastianBergmann\Money" name="EUR"/>
+    <extender full="SebastianBergmann\Money\XPT" namespace="SebastianBergmann\Money" name="XPT"/>
+    <extender full="SebastianBergmann\Money\CLP" namespace="SebastianBergmann\Money" name="CLP"/>
+    <extender full="SebastianBergmann\Money\HNL" namespace="SebastianBergmann\Money" name="HNL"/>
+    <extender full="SebastianBergmann\Money\NPR" namespace="SebastianBergmann\Money" name="NPR"/>
+    <extender full="SebastianBergmann\Money\SYP" namespace="SebastianBergmann\Money" name="SYP"/>
+    <extender full="SebastianBergmann\Money\BAM" namespace="SebastianBergmann\Money" name="BAM"/>
+    <extender full="SebastianBergmann\Money\UYI" namespace="SebastianBergmann\Money" name="UYI"/>
+    <extender full="SebastianBergmann\Money\PEN" namespace="SebastianBergmann\Money" name="PEN"/>
+    <extender full="SebastianBergmann\Money\RON" namespace="SebastianBergmann\Money" name="RON"/>
+    <extender full="SebastianBergmann\Money\MMK" namespace="SebastianBergmann\Money" name="MMK"/>
+    <extender full="SebastianBergmann\Money\IDR" namespace="SebastianBergmann\Money" name="IDR"/>
+    <extender full="SebastianBergmann\Money\GMD" namespace="SebastianBergmann\Money" name="GMD"/>
+    <extender full="SebastianBergmann\Money\CAD" namespace="SebastianBergmann\Money" name="CAD"/>
+    <extender full="SebastianBergmann\Money\CRC" namespace="SebastianBergmann\Money" name="CRC"/>
+    <extender full="SebastianBergmann\Money\TOP" namespace="SebastianBergmann\Money" name="TOP"/>
+    <extender full="SebastianBergmann\Money\XCD" namespace="SebastianBergmann\Money" name="XCD"/>
+    <extender full="SebastianBergmann\Money\XBB" namespace="SebastianBergmann\Money" name="XBB"/>
+    <extender full="SebastianBergmann\Money\CNY" namespace="SebastianBergmann\Money" name="CNY"/>
+    <extender full="SebastianBergmann\Money\COP" namespace="SebastianBergmann\Money" name="COP"/>
+    <extender full="SebastianBergmann\Money\KWD" namespace="SebastianBergmann\Money" name="KWD"/>
+    <extender full="SebastianBergmann\Money\VND" namespace="SebastianBergmann\Money" name="VND"/>
+    <extender full="SebastianBergmann\Money\KZT" namespace="SebastianBergmann\Money" name="KZT"/>
+    <extender full="SebastianBergmann\Money\BHD" namespace="SebastianBergmann\Money" name="BHD"/>
+    <extender full="SebastianBergmann\Money\ISK" namespace="SebastianBergmann\Money" name="ISK"/>
+    <extender full="SebastianBergmann\Money\GHS" namespace="SebastianBergmann\Money" name="GHS"/>
+    <extender full="SebastianBergmann\Money\MAD" namespace="SebastianBergmann\Money" name="MAD"/>
+    <extender full="SebastianBergmann\Money\BWP" namespace="SebastianBergmann\Money" name="BWP"/>
+    <extender full="SebastianBergmann\Money\MNT" namespace="SebastianBergmann\Money" name="MNT"/>
+    <extender full="SebastianBergmann\Money\BIF" namespace="SebastianBergmann\Money" name="BIF"/>
+    <extender full="SebastianBergmann\Money\SDG" namespace="SebastianBergmann\Money" name="SDG"/>
+    <extender full="SebastianBergmann\Money\BZD" namespace="SebastianBergmann\Money" name="BZD"/>
+    <extender full="SebastianBergmann\Money\QAR" namespace="SebastianBergmann\Money" name="QAR"/>
+    <extender full="SebastianBergmann\Money\XBA" namespace="SebastianBergmann\Money" name="XBA"/>
+    <extender full="SebastianBergmann\Money\SAR" namespace="SebastianBergmann\Money" name="SAR"/>
+    <extender full="SebastianBergmann\Money\XPF" namespace="SebastianBergmann\Money" name="XPF"/>
+    <extender full="SebastianBergmann\Money\KHR" namespace="SebastianBergmann\Money" name="KHR"/>
+    <extender full="SebastianBergmann\Money\TTD" namespace="SebastianBergmann\Money" name="TTD"/>
+    <extender full="SebastianBergmann\Money\DKK" namespace="SebastianBergmann\Money" name="DKK"/>
+    <extender full="SebastianBergmann\Money\BOB" namespace="SebastianBergmann\Money" name="BOB"/>
+    <extender full="SebastianBergmann\Money\XOF" namespace="SebastianBergmann\Money" name="XOF"/>
+    <extender full="SebastianBergmann\Money\LYD" namespace="SebastianBergmann\Money" name="LYD"/>
+    <extender full="SebastianBergmann\Money\MKD" namespace="SebastianBergmann\Money" name="MKD"/>
+    <extender full="SebastianBergmann\Money\KES" namespace="SebastianBergmann\Money" name="KES"/>
+    <extender full="SebastianBergmann\Money\MZN" namespace="SebastianBergmann\Money" name="MZN"/>
+    <extender full="SebastianBergmann\Money\LRD" namespace="SebastianBergmann\Money" name="LRD"/>
+    <extender full="SebastianBergmann\Money\XPD" namespace="SebastianBergmann\Money" name="XPD"/>
+    <extender full="SebastianBergmann\Money\XBD" namespace="SebastianBergmann\Money" name="XBD"/>
+    <extender full="SebastianBergmann\Money\MYR" namespace="SebastianBergmann\Money" name="MYR"/>
+    <extender full="SebastianBergmann\Money\LSL" namespace="SebastianBergmann\Money" name="LSL"/>
+    <extender full="SebastianBergmann\Money\COU" namespace="SebastianBergmann\Money" name="COU"/>
+    <extender full="SebastianBergmann\Money\PLN" namespace="SebastianBergmann\Money" name="PLN"/>
+    <extender full="SebastianBergmann\Money\MVR" namespace="SebastianBergmann\Money" name="MVR"/>
+    <extender full="SebastianBergmann\Money\KRW" namespace="SebastianBergmann\Money" name="KRW"/>
+    <extender full="SebastianBergmann\Money\PAB" namespace="SebastianBergmann\Money" name="PAB"/>
+    <extender full="SebastianBergmann\Money\NZD" namespace="SebastianBergmann\Money" name="NZD"/>
+    <extender full="SebastianBergmann\Money\XAU" namespace="SebastianBergmann\Money" name="XAU"/>
+    <extender full="SebastianBergmann\Money\XAF" namespace="SebastianBergmann\Money" name="XAF"/>
+    <extender full="SebastianBergmann\Money\BND" namespace="SebastianBergmann\Money" name="BND"/>
+    <extender full="SebastianBergmann\Money\ILS" namespace="SebastianBergmann\Money" name="ILS"/>
+    <extender full="SebastianBergmann\Money\ALL" namespace="SebastianBergmann\Money" name="ALL"/>
+    <extender full="SebastianBergmann\Money\DOP" namespace="SebastianBergmann\Money" name="DOP"/>
+    <extender full="SebastianBergmann\Money\AWG" namespace="SebastianBergmann\Money" name="AWG"/>
+    <extender full="SebastianBergmann\Money\MWK" namespace="SebastianBergmann\Money" name="MWK"/>
+    <extender full="SebastianBergmann\Money\XTS" namespace="SebastianBergmann\Money" name="XTS"/>
+    <extender full="SebastianBergmann\Money\DJF" namespace="SebastianBergmann\Money" name="DJF"/>
+    <extender full="SebastianBergmann\Money\VUV" namespace="SebastianBergmann\Money" name="VUV"/>
+    <extender full="SebastianBergmann\Money\LKR" namespace="SebastianBergmann\Money" name="LKR"/>
+    <extender full="SebastianBergmann\Money\KYD" namespace="SebastianBergmann\Money" name="KYD"/>
+    <extender full="SebastianBergmann\Money\ZWL" namespace="SebastianBergmann\Money" name="ZWL"/>
+    <extender full="SebastianBergmann\Money\XDR" namespace="SebastianBergmann\Money" name="XDR"/>
+    <extender full="SebastianBergmann\Money\MOP" namespace="SebastianBergmann\Money" name="MOP"/>
+    <extender full="SebastianBergmann\Money\BYR" namespace="SebastianBergmann\Money" name="BYR"/>
+    <extender full="SebastianBergmann\Money\ZAR" namespace="SebastianBergmann\Money" name="ZAR"/>
+    <extender full="SebastianBergmann\Money\USS" namespace="SebastianBergmann\Money" name="USS"/>
+    <extender full="SebastianBergmann\Money\FJD" namespace="SebastianBergmann\Money" name="FJD"/>
+    <extender full="SebastianBergmann\Money\CVE" namespace="SebastianBergmann\Money" name="CVE"/>
+    <extender full="SebastianBergmann\Money\SZL" namespace="SebastianBergmann\Money" name="SZL"/>
+    <extender full="SebastianBergmann\Money\ARS" namespace="SebastianBergmann\Money" name="ARS"/>
+    <extender full="SebastianBergmann\Money\BGN" namespace="SebastianBergmann\Money" name="BGN"/>
+    <extender full="SebastianBergmann\Money\XSU" namespace="SebastianBergmann\Money" name="XSU"/>
+    <extender full="SebastianBergmann\Money\VEF" namespace="SebastianBergmann\Money" name="VEF"/>
+    <extender full="SebastianBergmann\Money\LTL" namespace="SebastianBergmann\Money" name="LTL"/>
+    <extender full="SebastianBergmann\Money\JMD" namespace="SebastianBergmann\Money" name="JMD"/>
+    <extender full="SebastianBergmann\Money\LAK" namespace="SebastianBergmann\Money" name="LAK"/>
+    <extender full="SebastianBergmann\Money\SVC" namespace="SebastianBergmann\Money" name="SVC"/>
+    <extender full="SebastianBergmann\Money\TZS" namespace="SebastianBergmann\Money" name="TZS"/>
+    <extender full="SebastianBergmann\Money\CDF" namespace="SebastianBergmann\Money" name="CDF"/>
+    <extender full="SebastianBergmann\Money\GTQ" namespace="SebastianBergmann\Money" name="GTQ"/>
+    <extender full="SebastianBergmann\Money\MGA" namespace="SebastianBergmann\Money" name="MGA"/>
+    <extender full="SebastianBergmann\Money\DZD" namespace="SebastianBergmann\Money" name="DZD"/>
+    <extender full="SebastianBergmann\Money\MRO" namespace="SebastianBergmann\Money" name="MRO"/>
+    <extender full="SebastianBergmann\Money\SBD" namespace="SebastianBergmann\Money" name="SBD"/>
+    <extender full="SebastianBergmann\Money\WST" namespace="SebastianBergmann\Money" name="WST"/>
+    <extender full="SebastianBergmann\Money\TMT" namespace="SebastianBergmann\Money" name="TMT"/>
+    <extender full="SebastianBergmann\Money\KPW" namespace="SebastianBergmann\Money" name="KPW"/>
+    <extender full="SebastianBergmann\Money\THB" namespace="SebastianBergmann\Money" name="THB"/>
+    <extender full="SebastianBergmann\Money\AMD" namespace="SebastianBergmann\Money" name="AMD"/>
+    <extender full="SebastianBergmann\Money\BSD" namespace="SebastianBergmann\Money" name="BSD"/>
+    <extender full="SebastianBergmann\Money\GBP" namespace="SebastianBergmann\Money" name="GBP"/>
+    <extender full="SebastianBergmann\Money\MDL" namespace="SebastianBergmann\Money" name="MDL"/>
+    <extender full="SebastianBergmann\Money\AFN" namespace="SebastianBergmann\Money" name="AFN"/>
+    <extender full="SebastianBergmann\Money\AED" namespace="SebastianBergmann\Money" name="AED"/>
+    <extender full="SebastianBergmann\Money\YER" namespace="SebastianBergmann\Money" name="YER"/>
+    <extender full="SebastianBergmann\Money\ZMW" namespace="SebastianBergmann\Money" name="ZMW"/>
+    <extender full="SebastianBergmann\Money\LBP" namespace="SebastianBergmann\Money" name="LBP"/>
+    <extender full="SebastianBergmann\Money\CLF" namespace="SebastianBergmann\Money" name="CLF"/>
+    <extender full="SebastianBergmann\Money\TND" namespace="SebastianBergmann\Money" name="TND"/>
+    <extender full="SebastianBergmann\Money\CHW" namespace="SebastianBergmann\Money" name="CHW"/>
+    <extender full="SebastianBergmann\Money\BDT" namespace="SebastianBergmann\Money" name="BDT"/>
+    <extender full="SebastianBergmann\Money\GYD" namespace="SebastianBergmann\Money" name="GYD"/>
+    <extender full="SebastianBergmann\Money\HKD" namespace="SebastianBergmann\Money" name="HKD"/>
+    <extender full="SebastianBergmann\Money\HRK" namespace="SebastianBergmann\Money" name="HRK"/>
+    <extender full="SebastianBergmann\Money\SRD" namespace="SebastianBergmann\Money" name="SRD"/>
+    <extender full="SebastianBergmann\Money\PHP" namespace="SebastianBergmann\Money" name="PHP"/>
+    <extender full="SebastianBergmann\Money\CZK" namespace="SebastianBergmann\Money" name="CZK"/>
+    <extender full="SebastianBergmann\Money\UZS" namespace="SebastianBergmann\Money" name="UZS"/>
+    <extender full="SebastianBergmann\Money\INR" namespace="SebastianBergmann\Money" name="INR"/>
+    <extender full="SebastianBergmann\Money\BTN" namespace="SebastianBergmann\Money" name="BTN"/>
+    <extender full="SebastianBergmann\Money\JOD" namespace="SebastianBergmann\Money" name="JOD"/>
+    <extender full="SebastianBergmann\Money\MXV" namespace="SebastianBergmann\Money" name="MXV"/>
+    <extender full="SebastianBergmann\Money\HTG" namespace="SebastianBergmann\Money" name="HTG"/>
+    <extender full="SebastianBergmann\Money\JPY" namespace="SebastianBergmann\Money" name="JPY"/>
+    <extender full="SebastianBergmann\Money\CHE" namespace="SebastianBergmann\Money" name="CHE"/>
+    <extender full="SebastianBergmann\Money\TJS" namespace="SebastianBergmann\Money" name="TJS"/>
+    <extender full="SebastianBergmann\Money\NIO" namespace="SebastianBergmann\Money" name="NIO"/>
+    <extender full="SebastianBergmann\Money\NAD" namespace="SebastianBergmann\Money" name="NAD"/>
+    <extender full="SebastianBergmann\Money\IQD" namespace="SebastianBergmann\Money" name="IQD"/>
+    <extender full="SebastianBergmann\Money\RSD" namespace="SebastianBergmann\Money" name="RSD"/>
+    <extender full="SebastianBergmann\Money\SEK" namespace="SebastianBergmann\Money" name="SEK"/>
+    <extender full="SebastianBergmann\Money\GNF" namespace="SebastianBergmann\Money" name="GNF"/>
+    <extender full="SebastianBergmann\Money\SCR" namespace="SebastianBergmann\Money" name="SCR"/>
+    <extender full="SebastianBergmann\Money\USN" namespace="SebastianBergmann\Money" name="USN"/>
+    <extender full="SebastianBergmann\Money\BRL" namespace="SebastianBergmann\Money" name="BRL"/>
+    <extender full="SebastianBergmann\Money\EGP" namespace="SebastianBergmann\Money" name="EGP"/>
+    <extender full="SebastianBergmann\Money\SLL" namespace="SebastianBergmann\Money" name="SLL"/>
+    <extender full="SebastianBergmann\Money\NGN" namespace="SebastianBergmann\Money" name="NGN"/>
+    <extender full="SebastianBergmann\Money\UYU" namespace="SebastianBergmann\Money" name="UYU"/>
+    <extender full="SebastianBergmann\Money\ETB" namespace="SebastianBergmann\Money" name="ETB"/>
+    <extender full="SebastianBergmann\Money\BMD" namespace="SebastianBergmann\Money" name="BMD"/>
+    <extender full="SebastianBergmann\Money\SOS" namespace="SebastianBergmann\Money" name="SOS"/>
+    <extender full="SebastianBergmann\Money\KMF" namespace="SebastianBergmann\Money" name="KMF"/>
+    <extender full="SebastianBergmann\Money\ERN" namespace="SebastianBergmann\Money" name="ERN"/>
+    <extender full="SebastianBergmann\Money\MXN" namespace="SebastianBergmann\Money" name="MXN"/>
+    <extender full="SebastianBergmann\Money\PKR" namespace="SebastianBergmann\Money" name="PKR"/>
+    <extender full="SebastianBergmann\Money\IRR" namespace="SebastianBergmann\Money" name="IRR"/>
+    <extender full="SebastianBergmann\Money\LVL" namespace="SebastianBergmann\Money" name="LVL"/>
+    <extender full="SebastianBergmann\Money\CUC" namespace="SebastianBergmann\Money" name="CUC"/>
+    <extender full="SebastianBergmann\Money\GIP" namespace="SebastianBergmann\Money" name="GIP"/>
+    <extender full="SebastianBergmann\Money\CUP" namespace="SebastianBergmann\Money" name="CUP"/>
+    <extender full="SebastianBergmann\Money\XXX" namespace="SebastianBergmann\Money" name="XXX"/>
+    <extender full="SebastianBergmann\Money\AOA" namespace="SebastianBergmann\Money" name="AOA"/>
+    <extender full="SebastianBergmann\Money\AZN" namespace="SebastianBergmann\Money" name="AZN"/>
+    <extender full="SebastianBergmann\Money\AUD" namespace="SebastianBergmann\Money" name="AUD"/>
+    <extender full="SebastianBergmann\Money\XAG" namespace="SebastianBergmann\Money" name="XAG"/>
+    <extender full="SebastianBergmann\Money\FKP" namespace="SebastianBergmann\Money" name="FKP"/>
+    <extender full="SebastianBergmann\Money\XBC" namespace="SebastianBergmann\Money" name="XBC"/>
+    <extender full="SebastianBergmann\Money\SGD" namespace="SebastianBergmann\Money" name="SGD"/>
+    <extender full="SebastianBergmann\Money\TWD" namespace="SebastianBergmann\Money" name="TWD"/>
+    <extender full="SebastianBergmann\Money\XFU" namespace="SebastianBergmann\Money" name="XFU"/>
+    <extender full="SebastianBergmann\Money\PGK" namespace="SebastianBergmann\Money" name="PGK"/>
+    <extender full="SebastianBergmann\Money\STD" namespace="SebastianBergmann\Money" name="STD"/>
+    <extender full="SebastianBergmann\Money\BOV" namespace="SebastianBergmann\Money" name="BOV"/>
+    <extender full="SebastianBergmann\Money\SSP" namespace="SebastianBergmann\Money" name="SSP"/>
+    <extender full="SebastianBergmann\Money\NOK" namespace="SebastianBergmann\Money" name="NOK"/>
+    <extender full="SebastianBergmann\Money\ANG" namespace="SebastianBergmann\Money" name="ANG"/>
+    <extender full="SebastianBergmann\Money\KGS" namespace="SebastianBergmann\Money" name="KGS"/>
+  </extenders>
+  <interface full="JsonSerializable" namespace="" name="JsonSerializable">
+    <method name="jsonSerialize" abstract="false" static="false" visibility="public" final="false">
+    <docblock>
+      <description compact="Specify data which should be serialized to JSON"/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  </interface>
+</class>

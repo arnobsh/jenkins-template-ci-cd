@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Test Documentation</title>
+        <style>
+            body {
+                text-rendering: optimizeLegibility;
+                font-variant-ligatures: common-ligatures;
+                font-kerning: normal;
+                margin-left: 2em;
+            }
+
+            body > ul > li {
+                font-family: Source Serif Pro, PT Sans, Trebuchet MS, Helvetica, Arial;
+                font-size: 2em;
+            }
+
+            h2 {
+                font-family: Tahoma, Helvetica, Arial;
+                font-size: 3em;
+            }
+
+            ul {
+                list-style: none;
+                margin-bottom: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 id="SebastianBergmann\Money\CurrencyTest">SebastianBergmann\Money\Currency</h2>
+        <ul>
+            <li style="color: #555753;">✓ Exception is raised for invalid constructor argument</li>
+            <li style="color: #555753;">✓ Can be constructed from uppercase string</li>
+            <li style="color: #555753;">✓ Can be constructed from lowercase string</li>
+            <li style="color: #555753;">✓ Custom currency can be registered</li>
+            <li style="color: #555753;">✓ Registered currencies can be accessed</li>
+            <li style="color: #555753;">✓ Can be cast to string</li>
+            <li style="color: #555753;">✓ Currency code can be retrieved</li>
+            <li style="color: #555753;">✓ Default fraction digits can be retrieved</li>
+            <li style="color: #555753;">✓ Display name can be retrieved</li>
+            <li style="color: #555753;">✓ Numeric code can be retrieved</li>
+            <li style="color: #555753;">✓ Sub unit can be retrieved</li>
+        </ul>
+        <h2 id="SebastianBergmann\Money\IntlFormatterTest">SebastianBergmann\Money\IntlFormatter</h2>
+        <ul>
+            <li style="color: #555753;">✓ Money object can be formatted as string</li>
+        </ul>
+        <h2 id="SebastianBergmann\Money\MoneyTest">SebastianBergmann\Money\Money</h2>
+        <ul>
+            <li style="color: #555753;">✓ Exception is raised for invalid constructor arguments</li>
+            <li style="color: #555753;">✓ Object can be constructed for valid constructor arguments</li>
+            <li style="color: #555753;">✓ Object can be constructed from string value</li>
+            <li style="color: #555753;">✓ Amount can be retrieved</li>
+            <li style="color: #555753;">✓ Converted amount can be retrieved</li>
+            <li style="color: #555753;">✓ Currency can be retrieved</li>
+            <li style="color: #555753;">✓ Another money object with same currency can be added</li>
+            <li style="color: #555753;">✓ Exception is thrown for overflowing addition</li>
+            <li style="color: #555753;">✓ Exception is raised for integer overflow</li>
+            <li style="color: #555753;">✓ Exception is raised when money object with different currency is added</li>
+            <li style="color: #555753;">✓ Another money object with same currency can be subtracted</li>
+            <li style="color: #555753;">✓ Exception is thrown for overflowing subtraction</li>
+            <li style="color: #555753;">✓ Exception is raised when money object with different currency is subtracted</li>
+            <li style="color: #555753;">✓ Can be negated</li>
+            <li style="color: #555753;">✓ Can be multiplied by a factor</li>
+            <li style="color: #555753;">✓ Exception is raised when multiplied using invalid rounding mode</li>
+            <li style="color: #555753;">✓ Can be allocated to number of targets</li>
+            <li style="color: #555753;">✓ Percentage can be extracted</li>
+            <li style="color: #555753;">✓ Exception is raised when trying to allocate to invalid number of targets</li>
+            <li style="color: #555753;">✓ Can be allocated by ratios</li>
+            <li style="color: #555753;">✓ Can be compared to another money object with same currency</li>
+            <li style="color: #555753;">✓ Exception is raised when compared to money object with different currency</li>
+            <li style="color: #555753;">✓ Can be serialized to json</li>
+        </ul>
+    </body>
+</html>
